@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import Home from "./Pages/Home/Home";
+import PrimaryNavbar from "./Pages/Common/PrimaryNavbar/PrimaryNavbar";
+import SecondaryNavbar from "./Pages/Common/SecondaryNavbar/SecondaryNavbar";
+import Footer from "./Pages/Common/Footer/Footer";
+import field from "./Assets/field.png";
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <PrimaryNavbar />
+      <SecondaryNavbar />
+      <div className="overLay">
+        <div className="field">
+          <div className="App">
+            <Home />
+          </div>
+        </div>
+        <Footer />
+      </div>
+    </React.Fragment>
   );
 }
 

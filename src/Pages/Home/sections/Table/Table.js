@@ -1,0 +1,215 @@
+import classes from "./Table.module.css";
+import avatar from "../../../../Assets/avatar.png";
+import Grid from "@material-ui/core/Grid";
+const Table = () => {
+  const data = [
+    {
+      rk: 1,
+      person: {
+        avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+        name: "Maria",
+        details: " F .39 - 29 vs. JAX",
+      },
+      team: "LAC",
+      pos: "QB",
+      wk: 7,
+      opp: 7,
+      fptsg: 38.5,
+      fpts: 38.01,
+      yds: 347,
+      td: 3,
+      int: 0,
+      yds2: 66,
+      td2: 1,
+      rec: 0,
+      yds3: 66,
+      td3: 1,
+      sck: 0,
+      int2: 0,
+      ff: 0,
+      rr: 0,
+    },
+    {
+      rk: 1,
+      person: {
+        avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+        name: "Maria",
+        details: " F .39 - 29 vs. JAX",
+      },
+      team: "LAC",
+      pos: "QB",
+      wk: 7,
+      opp: 7,
+      fptsg: 38.5,
+      fpts: 38.01,
+      yds: 347,
+      td: 3,
+      int: 0,
+      yds2: 66,
+      td2: 1,
+      rec: 0,
+      yds3: 66,
+      td3: 1,
+      sck: 0,
+      int2: 0,
+      ff: 0,
+      rr: 0,
+    },
+    {
+      rk: 1,
+      person: {
+        avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+        name: "Maria",
+        details: " F .39 - 29 vs. JAX",
+      },
+      team: "LAC",
+      pos: "QB",
+      wk: 7,
+      opp: 7,
+      fptsg: 38.5,
+      fpts: 38.01,
+      yds: 347,
+      td: 3,
+      int: 0,
+      yds2: 66,
+      td2: 1,
+      rec: 0,
+      yds3: 66,
+      td3: 1,
+      sck: 0,
+      int2: 0,
+      ff: 0,
+      rr: 0,
+    },
+  ];
+  return (
+    <div className={classes.align}>
+      <div className={classes.secondHeaderBackground}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1706.133 50">
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+              x2="0.852"
+              y2="0.838"
+              gradientUnits="objectBoundingBox"
+            >
+              <stop offset="0" stopColor="#2e9cd5" />
+              <stop offset="1" stopColor="#0b3c75" />
+            </linearGradient>
+          </defs>
+          <path
+            id="Path_76"
+            data-name="Path 76"
+            d="M44.8-.735l1661.328.21L1660.154,72.52H0Z"
+            transform="translate(0 0.735)"
+            fill="url(#linear-gradient)"
+          />
+        </svg>
+      </div>
+      <div className={classes.firstHeaderBackground}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 783.632 50">
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+              x2="0.852"
+              y2="0.838"
+              gradientUnits="objectBoundingBox"
+            >
+              <stop offset="0" stopColor="#2e9cd5" />
+              <stop offset="1" stopColor="#0b3c75" />
+            </linearGradient>
+          </defs>
+          <path
+            id="Path_8300"
+            data-name="Path 8300"
+            d="M20.579-.735l763.053.169L762.513,58.265H0Z"
+            transform="translate(0 0.735)"
+            opacity="0.94"
+            fill="url(#linear-gradient)"
+          />
+        </svg>
+      </div>
+
+      <table>
+        <thead>
+          <tr className={classes.firstHeader}>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colSpan="3">Passing</th>
+            <th colSpan="2">Rushing</th>
+            <th colSpan="3">Recieving</th>
+            <th colSpan="4">Defense</th>
+          </tr>
+
+          <tr className={classes.secondHeader}>
+            <th>RK</th>
+            <th>NAME</th>
+            <th>TEAM</th>
+            <th>POS</th>
+            <th>WK</th>
+            <th>OPP</th>
+            <th>FPTS/G</th>
+            <th>FPTS</th>
+            <th>YDS</th>
+            <th>TD</th>
+            <th>INT</th>
+            <th>YDS</th>
+            <th>TD</th>
+            <th>REC</th>
+            <th>YDS</th>
+            <th>TD</th>
+            <th>SCK</th>
+            <th>INT</th>
+            <th>FF</th>
+            <th>RR</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((data, index) => (
+            <tr key={index}>
+              <td>{data.rk}</td>
+              <td>
+                <div>
+                  <Grid container spacing={3}>
+                    <Grid item xs={12} md={5} lg={4}>
+                      {data.person.avatar}
+                    </Grid>
+                    <Grid item xs={12} md={7} lg={8}>
+                      <p className={classes.name}>{data.person.name}</p>
+                      <p className={classes.details}>{data.person.details}</p>
+                    </Grid>
+                  </Grid>
+                </div>
+              </td>
+              <td>{data.team}</td>
+              <td>{data.pos}</td>
+              <td>{data.wk}</td>
+              <td>{data.opp}</td>
+              <td>{data.fptsg}</td>
+              <td>{data.fpts}</td>
+              <td>{data.yds}</td>
+              <td>{data.td}</td>
+              <td>{data.int}</td>
+              <td>{data.yds2}</td>
+              <td>{data.td2}</td>
+              <td>{data.rec}</td>
+              <td>{data.yds3}</td>
+              <td>{data.td3}</td>
+              <td>{data.sck}</td>
+              <td>{data.int2}</td>
+              <td>{data.ff}</td>
+              <td>{data.rr}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+export default Table;
