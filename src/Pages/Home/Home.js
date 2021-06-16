@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <Filter />
       <Table />
-      <LoadMore />
+      {/* <LoadMore /> */}
     </div>
   );
 };

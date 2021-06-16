@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   title: {
-    display: "none",
     marginBottom: "15px",
     [theme.breakpoints.up("sm")]: {
       display: "block",

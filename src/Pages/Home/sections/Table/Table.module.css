@@ -1,5 +1,7 @@
 .align {
   margin-top: 50px;
+}
+.table {
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -18,11 +20,11 @@
   position: absolute;
 }
 .firstHeaderBackground {
-  margin-top: -20px;
+  margin-top: -22px;
   margin-left: 575px !important;
   /* width: 64%; */
   /* width: 83%; */
-  width: 580px;
+  width: 620px;
   padding: 9px;
   position: absolute;
 }
@@ -57,7 +59,7 @@ td {
   text-align: center;
   padding: 8px;
 }
-.secondHeader th:nth-child(20) {
+.secondHeader th:nth-child(23) {
   border-right: 0px solid #0b3c75;
 }
 .firstHeader th:nth-child(12) {
@@ -94,7 +96,10 @@ td:nth-child(15),
 td:nth-child(16),
 td:nth-child(17),
 td:nth-child(18),
-td:nth-child(19) {
+td:nth-child(19),
+td:nth-child(20),
+td:nth-child(21),
+td:nth-child(22) {
   border-right: 1px solid transparent !important;
 }
 .avatar {

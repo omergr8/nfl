@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -7,10 +7,16 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import SearchIcon from "@material-ui/icons/Search";
-import Grid from "@material-ui/core/Grid";
-import player1 from "../../../../Assets/p1.png";
-import player2 from "../../../../Assets/p2.png";
-
+import Title from "./Components/Title/Title";
+import {
+  position,
+  team,
+  fantasyScoring,
+  preSeason,
+  regularSeason,
+  postSeason,
+} from "./filterData";
+var year = require("year");
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
@@ -26,21 +32,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
     backgroundColor: "white",
   },
-  title: {
-    textAlign: "center",
-    textTransform: "uppercase",
-    position: "realtive",
-    color: "white",
-    [theme.breakpoints.down("md")]: {
-      marginBottom: "200px",
-      marginRight: "auto",
-      marginLeft: "auto",
-      width: "50%",
-    },
-  },
-  titleSpan: {
-    color: "#2581B7",
-  },
+
   container: {
     position: "relative",
   },
@@ -50,51 +42,67 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     width: "100%",
   },
-  player2: {
-    marginLeft: "-20px",
-    marginTop: "-50px",
-    [theme.breakpoints.down("md")]: {
-      display: "none",
-    },
-  },
-  player1: {
-    marginTop: "-50px",
-    [theme.breakpoints.down("md")]: {
-      display: "none",
-    },
-  },
 }));
 
 export default function SimpleSelect() {
   const classes = useStyles();
-  const [age, setAge] = React.useState("");
-
+  const [season, setSeason] = React.useState("");
+  const [yearr, setYear] = React.useState("");
+  const [type, setType] = React.useState("");
+  const [from, setFrom] = React.useState("");
+  const [to, setTo] = React.useState("");
+  const [tofromdata, setToFromData] = React.useState([]);
+  const [all, setAll] = React.useState("");
+  const [positionn, setPosition] = React.useState("");
+  const [teamm, setTeam] = React.useState("");
+  const [search, setSearch] = React.useState("");
+  const [fantasyscoringg, setFantasyScoring] = React.useState("");
+  const [years, setYears] = React.useState([]);
   const handleChange = (event) => {
-    setAge(event.target.value);
+    console.log("tt", event.target);
+    if (event.target.name === "season") {
+      setSeason(event.target.value);
+      if (event.target.value === "preseason") {
+        setToFromData(preSeason);
+      } else if (event.target.value === "regular") {
+        setToFromData(regularSeason);
+      } else if (event.target.value === "postseason") {
+        setToFromData(postSeason);
+      }
+    } else if (event.target.name === "year") {
+      setYear(event.target.value);
+    } else if (event.target.name === "type") {
+      setType(event.target.value);
+    } else if (event.target.name === "from") {
+      setFrom(event.target.value);
+    } else if (event.target.name === "to") {
+      setTo(event.target.value);
+    } else if (event.target.name === "all") {
+      setAll(event.target.value);
+    } else if (event.target.name === "position") {
+      setPosition(event.target.value);
+    } else if (event.target.name === "team") {
+      setTeam(event.target.value);
+    } else if (event.target.name === "search") {
+      setSearch(event.target.value);
+    } else if (event.target.name === "fantasyscoring") {
+      setFantasyScoring(event.target.value);
+    }
+    // setAge(event.target.value);
   };
+  React.useEffect(() => {
+    var rows = [];
+    var initialYear = 2009;
+    console.log(initialYear !== parseInt(year("yyyy")));
+    while (initialYear !== parseInt(year("yyyy"))) {
+      rows.push(++initialYear);
+    }
+    setYears(rows);
+  }, []);
 
   return (
     <div className={classes.container}>
-      <div className={classes.title}>
-        <Grid container>
-          <Grid item xs={12} lg={3}>
-            <div className={classes.player2}>
-              <img src={player2} alt="p2" />
-            </div>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <h1>
-              fantasy football stats and{" "}
-              <span className={classes.titleSpan}>season leaders</span>
-            </h1>
-          </Grid>
-          <Grid item xs={12} lg={3}>
-            <div className={classes.player1}>
-              <img src={player1} alt="p1" />
-            </div>
-          </Grid>
-        </Grid>
-      </div>
+      <Title />
       <div className={classes.formTop}>
         <FormControl
           size="small"
@@ -103,14 +111,15 @@ export default function SimpleSelect() {
         >
           <InputLabel id="demo-simple-select-label">Season</InputLabel>
           <Select
+            name="season"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={season}
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            <MenuItem value="preseason">Preseason</MenuItem>
+            <MenuItem value="regular">Regular</MenuItem>
+            <MenuItem value="postseason">Postseason</MenuItem>
           </Select>
         </FormControl>
         <FormControl
@@ -118,16 +127,19 @@ export default function SimpleSelect() {
           variant="filled"
           className={classes.formControl}
         >
-          <InputLabel id="demo-simple-select-label">Year</InputLabel>
+          <InputLabel id="demo-simple-select-labell">Year</InputLabel>
           <Select
+            name="year"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={yearr}
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {years.map((years, index) => (
+              <MenuItem key={index} value={years}>
+                {years}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
         <FormControl
@@ -137,9 +149,10 @@ export default function SimpleSelect() {
         >
           <InputLabel id="demo-simple-select-label">Type</InputLabel>
           <Select
+            name="type"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={type}
             onChange={handleChange}
           >
             <MenuItem value={10}>Ten</MenuItem>
@@ -154,14 +167,21 @@ export default function SimpleSelect() {
         >
           <InputLabel id="demo-simple-select-label">From</InputLabel>
           <Select
+            name="from"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={from}
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {tofromdata.length !== 0 ? (
+              tofromdata.map((data, index) => (
+                <MenuItem key={index} value={data}>
+                  {data}
+                </MenuItem>
+              ))
+            ) : (
+              <MenuItem value="none">none</MenuItem>
+            )}
           </Select>
         </FormControl>
         <FormControl
@@ -171,14 +191,21 @@ export default function SimpleSelect() {
         >
           <InputLabel id="demo-simple-select-label">To</InputLabel>
           <Select
+            name="to"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={to}
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {tofromdata.length !== 0 ? (
+              tofromdata.map((data, index) => (
+                <MenuItem key={index} value={data}>
+                  {data}
+                </MenuItem>
+              ))
+            ) : (
+              <MenuItem value="none">none</MenuItem>
+            )}
           </Select>
         </FormControl>
         <FormControl
@@ -188,14 +215,13 @@ export default function SimpleSelect() {
         >
           <InputLabel id="demo-simple-select-label">All</InputLabel>
           <Select
+            name="all"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={all}
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            <MenuItem value="all">All</MenuItem>
           </Select>
         </FormControl>
         <FormControl
@@ -205,14 +231,17 @@ export default function SimpleSelect() {
         >
           <InputLabel id="demo-simple-select-label">Position</InputLabel>
           <Select
+            name="position"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={positionn}
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {position.map((pos, index) => (
+              <MenuItem value={pos} key={index}>
+                {pos}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
         <FormControl
@@ -222,19 +251,25 @@ export default function SimpleSelect() {
         >
           <InputLabel id="demo-simple-select-label">Team</InputLabel>
           <Select
+            name="team"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={teamm}
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {team.map((team, index) => (
+              <MenuItem value={team.abr} key={index}>
+                {team.abr}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
         <FormControl className={classes.formControl}>
           <InputLabel id="demo-simple-select-label">Search</InputLabel>
           <Input
+            name="search"
+            onChange={handleChange}
+            value={search}
             id="input-with-icon-adornment"
             endAdornment={
               <InputAdornment position="start">
@@ -250,14 +285,17 @@ export default function SimpleSelect() {
         >
           <InputLabel id="demo-simple-select-label">Fantasy Scoring</InputLabel>
           <Select
+            name="fantasyscoring"
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={age}
+            value={fantasyscoringg}
             onChange={handleChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {fantasyScoring.map((score, index) => (
+              <MenuItem value={score.abr} key={index}>
+                {score.abr}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
       </div>
