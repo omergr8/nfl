@@ -1,5 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import Drawer from "@material-ui/core/Drawer";
+import Button from "@material-ui/core/Button";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import Grid from "@material-ui/core/Grid";
+import ListItemText from "@material-ui/core/ListItemText";
 import classes2 from "./PrimaryNavbar.module.css";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -53,6 +59,23 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       display: "none",
     },
+  },
+  list: {
+    width: 250,
+  },
+  fullList: {
+    width: "auto",
+  },
+  paper: {
+    backgroundColor: "black",
+    color: "white",
+  },
+  button: {
+    backgroundColor: "white",
+    marginTop: "10px",
+  },
+  mobileLogo: {
+    textAlign: "center",
   },
 }));
 
@@ -126,59 +149,112 @@ export default function PrimaryNavbar() {
       </li>
     </ul>
   );
+  const list = (
+    <div className={classes.list}>
+      <div className={classes.mobileLogo}>
+        <img src={logo} alt="logo" />
+      </div>
+      <Grid container justify="center" alignItems="center" spacing={0}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={5}>
+          <Button variant="outlined" className={classes.button}>
+            Login
+          </Button>
+        </Grid>
+        <Grid item xs={5}>
+          <Button variant="outlined" className={classes.button}>
+            Sign Up
+          </Button>
+        </Grid>
+        <Grid item xs={1}></Grid>
+      </Grid>
+      <List>
+        <ListItem button>
+          <ListItemText primary="NFL" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="NCAAF" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="STATS" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="FANTASY" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="ARTICLES" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="NEWS" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="HELP" />
+        </ListItem>
+      </List>
+    </div>
+  );
   const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: "top", horizontal: "right" }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        {" "}
-        <a href="#">NFL</a>
-      </MenuItem>
-      <MenuItem>
-        {" "}
-        <a href="#">NCAAF</a>
-      </MenuItem>
-      <MenuItem>
-        {" "}
-        <a href="#">STATS</a>
-      </MenuItem>
-      <MenuItem>
-        {" "}
-        <a href="#">FANTASY</a>
-      </MenuItem>
-      <MenuItem>
-        {" "}
-        <a href="#">ARTICLES</a>
-      </MenuItem>
-      <MenuItem>
-        {" "}
-        <a href="#">NEWS</a>
-      </MenuItem>
-      <MenuItem>
-        {" "}
-        <a href="#">HELP</a>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          //   className={classes2.account}
-          edge="end"
-          aria-label="account of current user"
-          aria-controls={menuId}
-          aria-haspopup="true"
-          onClick={handleProfileMenuOpen}
-          color="inherit"
-        >
-          <SearchIcon />
-          <label className={classes2.label}>LOGIN</label>
-        </IconButton>
-      </MenuItem>
-    </Menu>
+    <React.Fragment>
+      <Drawer
+        classes={{ paper: classes.paper }}
+        open={isMobileMenuOpen}
+        onClose={handleMobileMenuClose}
+      >
+        {list}
+      </Drawer>
+    </React.Fragment>
+    // <Menu
+    //   anchorEl={mobileMoreAnchorEl}
+    //   anchorOrigin={{ vertical: "top", horizontal: "right" }}
+    //   id={mobileMenuId}
+    //   keepMounted
+    //   transformOrigin={{ vertical: "top", horizontal: "right" }}
+    //   open={isMobileMenuOpen}
+    //   onClose={handleMobileMenuClose}
+    // >
+    //   <MenuItem>
+    //     {" "}
+    //     <a href="#">NFL</a>
+    //   </MenuItem>
+    //   <MenuItem>
+    //     {" "}
+    //     <a href="#">NCAAF</a>
+    //   </MenuItem>
+    //   <MenuItem>
+    //     {" "}
+    //     <a href="#">STATS</a>
+    //   </MenuItem>
+    //   <MenuItem>
+    //     {" "}
+    //     <a href="#">FANTASY</a>
+    //   </MenuItem>
+    //   <MenuItem>
+    //     {" "}
+    //     <a href="#">ARTICLES</a>
+    //   </MenuItem>
+    //   <MenuItem>
+    //     {" "}
+    //     <a href="#">NEWS</a>
+    //   </MenuItem>
+    //   <MenuItem>
+    //     {" "}
+    //     <a href="#">HELP</a>
+    //   </MenuItem>
+    //   <MenuItem onClick={handleProfileMenuOpen}>
+    //     <IconButton
+    //       //   className={classes2.account}
+    //       edge="end"
+    //       aria-label="account of current user"
+    //       aria-controls={menuId}
+    //       aria-haspopup="true"
+    //       onClick={handleProfileMenuOpen}
+    //       color="inherit"
+    //     >
+    //       <SearchIcon />
+    //       <label className={classes2.label}>LOGIN</label>
+    //     </IconButton>
+    //   </MenuItem>
+    // </Menu>
   );
 
   return (
