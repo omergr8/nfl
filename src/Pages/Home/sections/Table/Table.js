@@ -68,7 +68,7 @@ const Table = () => {
           <thead>
             <tr className={classes.firstHeader}>
               <th></th>
-              <th></th>
+              <th colSpan="1">NFL | NCAAF</th>
               <th></th>
               <th></th>
               <th></th>
@@ -114,12 +114,12 @@ const Table = () => {
                 <tr key={index}>
                   <td>{data.rk}</td>
                   <td>
-                    <div>
+                    <div className={classes.nameCol}>
                       <Grid container spacing={3}>
-                        <Grid item xs={12} md={5} lg={4}>
+                        <Grid item xs={12} sm={12} md={12} lg={4}>
                           {data.person.avatar}
                         </Grid>
-                        <Grid item xs={12} md={7} lg={8}>
+                        <Grid item xs={12} sm={12} md={12} lg={8}>
                           <p className={classes.name}>{data.person.name}</p>
                           <p className={classes.details}>
                             {data.person.details}

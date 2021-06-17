@@ -4,6 +4,8 @@ import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import MenuItem from "@material-ui/core/MenuItem";
+import Button from "@material-ui/core/Button";
+
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import SearchIcon from "@material-ui/icons/Search";
@@ -23,6 +25,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
     minWidth: 220,
     backgroundColor: "white",
+  },
+  formControlButton: {
+    margin: theme.spacing(1),
+    marginTop: theme.spacing(3),
+    minWidth: 220,
   },
   select: {
     backgroundColor: "white",
@@ -48,11 +55,10 @@ export default function SimpleSelect() {
   const classes = useStyles();
   const [season, setSeason] = React.useState("");
   const [yearr, setYear] = React.useState("");
-  const [type, setType] = React.useState("");
+  const [live, setLive] = React.useState("default");
   const [from, setFrom] = React.useState("");
   const [to, setTo] = React.useState("");
   const [tofromdata, setToFromData] = React.useState([]);
-  const [all, setAll] = React.useState("");
   const [positionn, setPosition] = React.useState("");
   const [teamm, setTeam] = React.useState("");
   const [search, setSearch] = React.useState("");
@@ -71,14 +77,10 @@ export default function SimpleSelect() {
       }
     } else if (event.target.name === "year") {
       setYear(event.target.value);
-    } else if (event.target.name === "type") {
-      setType(event.target.value);
     } else if (event.target.name === "from") {
       setFrom(event.target.value);
     } else if (event.target.name === "to") {
       setTo(event.target.value);
-    } else if (event.target.name === "all") {
-      setAll(event.target.value);
     } else if (event.target.name === "position") {
       setPosition(event.target.value);
     } else if (event.target.name === "team") {
@@ -99,7 +101,13 @@ export default function SimpleSelect() {
     }
     setYears(rows);
   }, []);
-
+  const changeButton = () => {
+    if (live === "default") {
+      setLive("secondary");
+    } else {
+      setLive("default");
+    }
+  };
   return (
     <div className={classes.container}>
       <Title />
@@ -145,20 +153,16 @@ export default function SimpleSelect() {
         <FormControl
           size="small"
           variant="filled"
-          className={classes.formControl}
+          className={classes.formControlButton}
         >
-          <InputLabel id="demo-simple-select-label">Type</InputLabel>
-          <Select
-            name="type"
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={type}
-            onChange={handleChange}
+          <Button
+            onClick={changeButton}
+            color={live}
+            size="large"
+            variant="contained"
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
-          </Select>
+            LIVE
+          </Button>
         </FormControl>
         <FormControl
           size="small"
@@ -208,22 +212,7 @@ export default function SimpleSelect() {
             )}
           </Select>
         </FormControl>
-        <FormControl
-          size="small"
-          variant="filled"
-          className={classes.formControl}
-        >
-          <InputLabel id="demo-simple-select-label">All</InputLabel>
-          <Select
-            name="all"
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={all}
-            onChange={handleChange}
-          >
-            <MenuItem value="all">All</MenuItem>
-          </Select>
-        </FormControl>
+
         <FormControl
           size="small"
           variant="filled"

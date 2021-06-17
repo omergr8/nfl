@@ -14,6 +14,10 @@ import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import logo from "../../../Assets/logo.svg";
@@ -77,6 +81,16 @@ const useStyles = makeStyles((theme) => ({
   mobileLogo: {
     textAlign: "center",
   },
+  accordation: {
+    color: "white",
+    backgroundColor: "black",
+  },
+  accordationDetails: {
+    marginBottom: "-25px",
+    marginTop: "-20px",
+    color: "black",
+    backgroundColor: "white",
+  },
 }));
 
 export default function PrimaryNavbar() {
@@ -121,6 +135,48 @@ export default function PrimaryNavbar() {
   );
 
   const mobileMenuId = "primary-search-account-menu-mobile";
+  const secondaryBarLinks = (
+    <Accordion className={classes.accordation}>
+      <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+        <Typography className={classes.heading}>NFL</Typography>
+      </AccordionSummary>
+      <AccordionDetails className={classes.accordationDetails}>
+        <ListItem button>
+          <ListItemText primary="Home" />
+        </ListItem>
+      </AccordionDetails>
+      <AccordionDetails className={classes.accordationDetails}>
+        <ListItem button>
+          <ListItemText primary="Scores" />
+        </ListItem>
+      </AccordionDetails>
+      <AccordionDetails className={classes.accordationDetails}>
+        <ListItem button>
+          <ListItemText primary="Schedule" />
+        </ListItem>
+      </AccordionDetails>
+      <AccordionDetails className={classes.accordationDetails}>
+        <ListItem button>
+          <ListItemText primary="Standings" />
+        </ListItem>
+      </AccordionDetails>
+      <AccordionDetails className={classes.accordationDetails}>
+        <ListItem button>
+          <ListItemText primary="Stats" />
+        </ListItem>
+      </AccordionDetails>
+      <AccordionDetails className={classes.accordationDetails}>
+        <ListItem button>
+          <ListItemText primary="Teams" />
+        </ListItem>
+      </AccordionDetails>
+      <AccordionDetails className={classes.accordationDetails}>
+        <ListItem button>
+          <ListItemText primary="Injuries" />
+        </ListItem>
+      </AccordionDetails>
+    </Accordion>
+  );
   const links = (
     <ul className={classes2.menu}>
       <li>
@@ -169,9 +225,8 @@ export default function PrimaryNavbar() {
         <Grid item xs={1}></Grid>
       </Grid>
       <List>
-        <ListItem button>
-          <ListItemText primary="NFL" />
-        </ListItem>
+        {secondaryBarLinks}
+
         <ListItem button>
           <ListItemText primary="NCAAF" />
         </ListItem>

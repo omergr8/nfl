@@ -6,7 +6,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -15,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: "#242424 !important",
     height: "35px",
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
   },
   bar: {
     textAlign: "center",
@@ -100,7 +102,7 @@ export default function SecondaryNavbar() {
         <a href="#">Stats</a>
       </li>
       <li>
-        <a href="#">Terms</a>
+        <a href="#">Teams</a>
       </li>
       <li>
         <a href="#">Injuries</a>

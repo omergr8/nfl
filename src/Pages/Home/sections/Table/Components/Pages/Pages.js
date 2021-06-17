@@ -20,7 +20,6 @@ const Pages = (props) => {
           href="#"
           onClick={(event) => props.changeItem(event, 10)}
           className={props.items === 10 ? classes.itemBold : classes.item}
-          color="white"
         >
           10
         </Link>
@@ -29,7 +28,6 @@ const Pages = (props) => {
           href="#"
           onClick={(event) => props.changeItem(event, 25)}
           className={props.items === 25 ? classes.itemBold : classes.item}
-          color="white"
         >
           25
         </Link>
@@ -38,7 +36,6 @@ const Pages = (props) => {
           href="#"
           onClick={(event) => props.changeItem(event, 50)}
           className={props.items === 50 ? classes.itemBold : classes.item}
-          color="white"
         >
           50
         </Link>
@@ -47,7 +44,6 @@ const Pages = (props) => {
           href="#"
           onClick={(event) => props.changeItem(event, 100)}
           className={props.items === 100 ? classes.itemBold : classes.item}
-          color="white"
         >
           100
         </Link>
@@ -56,7 +52,6 @@ const Pages = (props) => {
           href="#"
           onClick={(event) => props.changeItem(event, "all")}
           className={props.items === "all" ? classes.itemBold : classes.item}
-          color="white"
         >
           All
         </Link>
