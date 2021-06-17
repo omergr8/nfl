@@ -5,7 +5,14 @@ export const tableData = [
   {
     rk: 1,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -34,7 +41,14 @@ export const tableData = [
   {
     rk: 2,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -63,7 +77,14 @@ export const tableData = [
   {
     rk: 3,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -92,7 +113,14 @@ export const tableData = [
   {
     rk: 4,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -121,7 +149,14 @@ export const tableData = [
   {
     rk: 5,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -150,7 +185,14 @@ export const tableData = [
   {
     rk: 6,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -179,7 +221,14 @@ export const tableData = [
   {
     rk: 7,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -208,7 +257,14 @@ export const tableData = [
   {
     rk: 8,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -237,7 +293,14 @@ export const tableData = [
   {
     rk: 9,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -266,7 +329,14 @@ export const tableData = [
   {
     rk: 10,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -295,7 +365,14 @@ export const tableData = [
   {
     rk: 11,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -324,7 +401,14 @@ export const tableData = [
   {
     rk: 12,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -353,7 +437,14 @@ export const tableData = [
   {
     rk: 13,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -382,7 +473,14 @@ export const tableData = [
   {
     rk: 14,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -411,7 +509,14 @@ export const tableData = [
   {
     rk: 15,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -440,7 +545,14 @@ export const tableData = [
   {
     rk: 16,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -469,7 +581,14 @@ export const tableData = [
   {
     rk: 17,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -498,7 +617,14 @@ export const tableData = [
   {
     rk: 18,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -527,7 +653,14 @@ export const tableData = [
   {
     rk: 19,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -556,7 +689,14 @@ export const tableData = [
   {
     rk: 20,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -585,7 +725,14 @@ export const tableData = [
   {
     rk: 21,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -614,7 +761,14 @@ export const tableData = [
   {
     rk: 22,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -643,7 +797,14 @@ export const tableData = [
   {
     rk: 23,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -672,7 +833,14 @@ export const tableData = [
   {
     rk: 24,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -701,7 +869,14 @@ export const tableData = [
   {
     rk: 25,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -730,7 +905,14 @@ export const tableData = [
   {
     rk: 26,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },
@@ -759,7 +941,14 @@ export const tableData = [
   {
     rk: 27,
     person: {
-      avatar: <img className={classes.avatar} src={avatar} alt="avatar" />,
+      avatar: (
+        <img
+          className={classes.avatar}
+          src={avatar}
+          width="40px"
+          alt="avatar"
+        />
+      ),
       name: "Maria",
       details: " F .39 - 29 vs. JAX",
     },

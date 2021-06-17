@@ -5,6 +5,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
 
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
@@ -23,14 +24,25 @@ const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
     marginTop: theme.spacing(3),
-    minWidth: 220,
+
     backgroundColor: "white",
+    borderRadius: "5px",
+    flex: "1 0 18%",
+
+    [theme.breakpoints.down("sm")]: {
+      flex: "1 0 40%",
+    },
   },
   formControlButton: {
     margin: theme.spacing(1),
     marginTop: theme.spacing(3),
-    minWidth: 220,
+    flex: "1 0 18%",
+    [theme.breakpoints.down("sm")]: {
+      flex: "1 0 40%",
+    },
+    // minWidth: 220,
   },
+  button: { height: "48px" },
   select: {
     backgroundColor: "white",
   },
@@ -46,8 +58,34 @@ const useStyles = makeStyles((theme) => ({
   formTop: {
     zIndex: "9",
     marginTop: "-170px",
-    textAlign: "center",
     width: "100%",
+    display: "flex",
+    flexWrap: "wrap",
+
+    // gridGap: "1rem",
+    // justifyItems: "center",
+    // alignItems: "center",
+
+    // marginLeft: "auto",
+    // marginRight: "auto",
+
+    // gridTemplateColumns: "repeat(2, 1fr)",
+
+    // [theme.breakpoints.up("sm")]: {
+    //   gridTemplateColumns: "repeat(2, 1fr)",
+    // },
+
+    // [theme.breakpoints.up("md")]: {
+    //   gridTemplateColumns: "repeat(4, 1fr)",
+    // },
+    // [theme.breakpoints.up("lg")]: {
+    //   gridTemplateColumns: "repeat(4, 1fr)",
+    // },
+    // gridTemplateColumns: "auto auto auto",
+  },
+
+  searchLabel: {
+    marginLeft: "10px",
   },
 }));
 
@@ -156,6 +194,7 @@ export default function SimpleSelect() {
           className={classes.formControlButton}
         >
           <Button
+            className={classes.button}
             onClick={changeButton}
             color={live}
             size="large"
@@ -254,7 +293,12 @@ export default function SimpleSelect() {
           </Select>
         </FormControl>
         <FormControl className={classes.formControl}>
-          <InputLabel id="demo-simple-select-label">Search</InputLabel>
+          <InputLabel
+            className={classes.searchLabel}
+            id="demo-simple-select-label"
+          >
+            Search
+          </InputLabel>
           <Input
             name="search"
             onChange={handleChange}

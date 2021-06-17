@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Table.module.css";
 import Pages from "./Components/Pages/Pages";
+import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import { tableData } from "./data";
 const Table = () => {
@@ -68,7 +69,13 @@ const Table = () => {
           <thead>
             <tr className={classes.firstHeader}>
               <th></th>
-              <th colSpan="1">NFL | NCAAF</th>
+              <th colSpan="1">
+                {" "}
+                <div className={classes.nameButton}>
+                  <Button size="small">NCL</Button>
+                  <Button size="small">NCAAF</Button>
+                </div>
+              </th>
               <th></th>
               <th></th>
               <th></th>
@@ -113,13 +120,18 @@ const Table = () => {
               .map((data, index) => (
                 <tr key={index}>
                   <td>{data.rk}</td>
-                  <td>
+                  <td style={{ padding: "0px" }}>
                     <div className={classes.nameCol}>
                       <Grid container spacing={3}>
-                        <Grid item xs={12} sm={12} md={12} lg={4}>
+                        <Grid
+                          item
+                          xs={3}
+                          lg={3}
+                          className={classes.avatarContainer}
+                        >
                           {data.person.avatar}
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={8}>
+                        <Grid item xs={9} lg={9}>
                           <p className={classes.name}>{data.person.name}</p>
                           <p className={classes.details}>
                             {data.person.details}
