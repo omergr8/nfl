@@ -66,21 +66,15 @@ td {
 .firstHeader th:nth-child(12) {
   border-right: 1px solid transparent;
 }
-.firstHeader th:nth-child(2) {
-  background: linear-gradient(
-    0deg,
-    rgba(46, 156, 213, 1) 0%,
-    rgba(11, 60, 117, 1) 100%
-  );
-}
+
 .nameButton {
   display: flex;
   justify-content: space-between;
 }
 .nameButton Button {
-  margin-top: -5px;
-  height: 23px;
-  width: 80px;
+  margin-top: -4px;
+  height: 21px;
+  width: 90px;
   background: linear-gradient(
     0deg,
     rgba(46, 156, 213, 1) 0%,
@@ -166,6 +160,16 @@ td:nth-child(22) {
       rgba(11, 60, 117, 1) 100%
     );
   }
+  .firstHeader th:nth-child(2) {
+    background-color: black !important;
+    background: black !important;
+  }
+  .nameButton Button {
+    margin-bottom: -5px;
+    height: 30px;
+    width: 90px;
+  }
+
   /* .name {
     line-height: 15px;
   }
