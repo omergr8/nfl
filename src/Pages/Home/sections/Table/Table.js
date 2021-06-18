@@ -3,6 +3,7 @@ import classes from "./Table.module.css";
 import Pages from "./Components/Pages/Pages";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
+import svgg from "../../../../Assets/secondHeader2.svg";
 import { tableData } from "./data";
 const Table = () => {
   const data = tableData;
@@ -72,7 +73,7 @@ const Table = () => {
               <th colSpan="1">
                 {" "}
                 <div className={classes.nameButton}>
-                  <Button size="small">NCL</Button>
+                  <Button size="small">NFL</Button>
                   <Button size="small">NCAAF</Button>
                 </div>
               </th>
@@ -112,6 +113,8 @@ const Table = () => {
               <th>INT</th>
               <th>FF</th>
               <th>FR</th>
+              <th></th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
