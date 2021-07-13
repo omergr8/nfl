@@ -6,7 +6,6 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
-
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import SearchIcon from "@material-ui/icons/Search";
@@ -47,6 +46,12 @@ const useStyles = makeStyles((theme) => ({
 
   container: {
     position: "relative",
+    marginRight: "auto",
+    marginLeft: "auto",
+    marginTop: "120px",
+    maxWidth: "1200px",
+    paddingRight: "10px",
+    paddingLeft: "10px",
   },
   formTop: {
     zIndex: "9",

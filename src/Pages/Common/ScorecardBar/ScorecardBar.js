@@ -8,12 +8,12 @@ import scorelogo from "../../../Assets/scorelogo.png";
 const ScorecardBar = () => {
   return (
     <div className="scoreboard__container">
-      <div className="game__container">
+      <div className="game__container4">
         <h2 className="game__container__title__main">
           NFL/NCAAF <br /> Scores
         </h2>
       </div>
-      <div className="game__container2">
+      <div className="game__container3">
         <h3 className="game__container__title">FAVORITE</h3>
       </div>
       <Game
@@ -25,7 +25,7 @@ const ScorecardBar = () => {
         home={{ name: "DAL", score: 7, logo: scorelogo }}
         final={false}
       />
-      <div className="game__container2">
+      <div className="game__container3">
         <h3 className="game__container__title">NFL</h3>
       </div>
       <Game
@@ -51,7 +51,7 @@ const ScorecardBar = () => {
         home={{ name: "NO", score: 9, logo: scorelogo }}
         final={true}
       />
-      <div className="game__container2">
+      <div className="game__container3">
         <h3 className="game__container__title">NCAA</h3>
       </div>
       <Game

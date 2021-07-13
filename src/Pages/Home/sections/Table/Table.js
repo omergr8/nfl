@@ -66,7 +66,7 @@ const Table = () => {
         </svg>
       </div>
       <div className={classes.table}>
-        <table>
+        <table className={classes.tableTag}>
           <thead>
             <tr className={classes.firstHeader}>
               <th></th>
@@ -122,8 +122,8 @@ const Table = () => {
               .slice(0, items !== "all" ? items : data.length)
               .map((data, index) => (
                 <tr key={index}>
-                  <td>{data.rk}</td>
-                  <td style={{ padding: "0px" }}>
+                  <td className={classes.tableTd}>{data.rk}</td>
+                  <td style={{ padding: "0px" }} className={classes.tableTd}>
                     <div className={classes.nameCol}>
                       <Grid container spacing={3}>
                         <Grid
@@ -143,27 +143,27 @@ const Table = () => {
                       </Grid>
                     </div>
                   </td>
-                  <td>{data.team}</td>
-                  <td>{data.pos}</td>
-                  <td>{data.wk}</td>
-                  <td>{data.opp}</td>
-                  <td>{data.fptsg}</td>
-                  <td>{data.fpts}</td>
-                  <td>{data.yds}</td>
-                  <td>{data.td}</td>
-                  <td>{data.int}</td>
-                  <td>{data.yds2}</td>
-                  <td>{data.td2}</td>
-                  <td>{data.rec}</td>
-                  <td>{data.yds3}</td>
-                  <td>{data.td3}</td>
-                  <td>{data.tt}</td>
-                  <td>{data.ast}</td>
-                  <td>{data.td4}</td>
-                  <td>{data.sck}</td>
-                  <td>{data.int2}</td>
-                  <td>{data.ff}</td>
-                  <td>{data.rr}</td>
+                  <td className={classes.tableTd}>{data.team}</td>
+                  <td className={classes.tableTd}>{data.pos}</td>
+                  <td className={classes.tableTd}>{data.wk}</td>
+                  <td className={classes.tableTd}>{data.opp}</td>
+                  <td className={classes.tableTd}>{data.fptsg}</td>
+                  <td className={classes.tableTd}>{data.fpts}</td>
+                  <td className={classes.tableTd}>{data.yds}</td>
+                  <td className={classes.tableTd}>{data.td}</td>
+                  <td className={classes.tableTd}>{data.int}</td>
+                  <td className={classes.tableTd}>{data.yds2}</td>
+                  <td className={classes.tableTd}>{data.td2}</td>
+                  <td className={classes.tableTd}>{data.rec}</td>
+                  <td className={classes.tableTd}>{data.yds3}</td>
+                  <td className={classes.tableTd}>{data.td3}</td>
+                  <td className={classes.tableTd}>{data.tt}</td>
+                  <td className={classes.tableTd}>{data.ast}</td>
+                  <td className={classes.tableTd}>{data.td4}</td>
+                  <td className={classes.tableTd}>{data.sck}</td>
+                  <td className={classes.tableTd}>{data.int2}</td>
+                  <td className={classes.tableTd}>{data.ff}</td>
+                  <td className={classes.tableTd}>{data.rr}</td>
                 </tr>
               ))}
           </tbody>

@@ -6,18 +6,17 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Grid from "@material-ui/core/Grid";
 import ListItemText from "@material-ui/core/ListItemText";
-import classes2 from "./PrimaryNavbar.module.css";
+import classes2 from "./PrimaryNavbar.module.scss";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import TestNav from "../TestNav/TestNav";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import logo from "../../../Assets/logo.svg";
@@ -97,7 +96,6 @@ export default function PrimaryNavbar() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -179,8 +177,9 @@ export default function PrimaryNavbar() {
   );
   const links = (
     <ul className={classes2.menu}>
-      <li>
-        <a href="#">NFL</a>
+      <li className={classes2.nav__menuItem}>
+        <a href="!">NFL</a>
+        <TestNav />
       </li>
       <li>
         <a href="#">NCAAF</a>
@@ -263,7 +262,7 @@ export default function PrimaryNavbar() {
   return (
     <div className={classes.grow}>
       <div className={classes2.box}></div>
-      <Divider className={classes2.divider} />
+
       <AppBar className={classes.appBar} position="static">
         <Toolbar className={classes.bar}>
           <Typography className={classes.title} variant="h6" noWrap>
@@ -272,6 +271,7 @@ export default function PrimaryNavbar() {
 
           <div className={classes.sectionDesktop}>
             {links}
+
             <div className={classes.grow} />
           </div>
 
