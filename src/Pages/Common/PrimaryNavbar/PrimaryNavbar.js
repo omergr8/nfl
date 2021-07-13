@@ -258,58 +258,6 @@ export default function PrimaryNavbar() {
         {list}
       </Drawer>
     </React.Fragment>
-    // <Menu
-    //   anchorEl={mobileMoreAnchorEl}
-    //   anchorOrigin={{ vertical: "top", horizontal: "right" }}
-    //   id={mobileMenuId}
-    //   keepMounted
-    //   transformOrigin={{ vertical: "top", horizontal: "right" }}
-    //   open={isMobileMenuOpen}
-    //   onClose={handleMobileMenuClose}
-    // >
-    //   <MenuItem>
-    //     {" "}
-    //     <a href="#">NFL</a>
-    //   </MenuItem>
-    //   <MenuItem>
-    //     {" "}
-    //     <a href="#">NCAAF</a>
-    //   </MenuItem>
-    //   <MenuItem>
-    //     {" "}
-    //     <a href="#">STATS</a>
-    //   </MenuItem>
-    //   <MenuItem>
-    //     {" "}
-    //     <a href="#">FANTASY</a>
-    //   </MenuItem>
-    //   <MenuItem>
-    //     {" "}
-    //     <a href="#">ARTICLES</a>
-    //   </MenuItem>
-    //   <MenuItem>
-    //     {" "}
-    //     <a href="#">NEWS</a>
-    //   </MenuItem>
-    //   <MenuItem>
-    //     {" "}
-    //     <a href="#">HELP</a>
-    //   </MenuItem>
-    //   <MenuItem onClick={handleProfileMenuOpen}>
-    //     <IconButton
-    //       //   className={classes2.account}
-    //       edge="end"
-    //       aria-label="account of current user"
-    //       aria-controls={menuId}
-    //       aria-haspopup="true"
-    //       onClick={handleProfileMenuOpen}
-    //       color="inherit"
-    //     >
-    //       <SearchIcon />
-    //       <label className={classes2.label}>LOGIN</label>
-    //     </IconButton>
-    //   </MenuItem>
-    // </Menu>
   );
 
   return (
