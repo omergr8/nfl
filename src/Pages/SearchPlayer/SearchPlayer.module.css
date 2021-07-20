@@ -1,0 +1,7 @@
+.childNewsDiv {
+  background: linear-gradient(
+    90deg,
+    rgba(41, 65, 115, 1) 0%,
+    rgba(22, 104, 133, 1) 100%
+  );
+}

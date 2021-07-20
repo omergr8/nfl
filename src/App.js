@@ -4,6 +4,7 @@ import Draft from "./Pages/Draft/Draft";
 import Scoreboard from "./Pages/Scoreboard/Scoreboard";
 import Standings from "./Pages/Standings/Standings";
 import Schedule from "./Pages/Schedule/Schedule";
+import SearchPlayer from "./Pages/SearchPlayer/SearchPlayer";
 import PrimaryNavbar from "./Pages/Common/PrimaryNavbar/PrimaryNavbar";
 import ScorecardBar from "./Pages/Common/ScorecardBar/ScorecardBar";
 import Footer from "./Pages/Common/Footer/Footer";
@@ -30,6 +31,7 @@ function App() {
                   <Route path="/scoreboard" component={Scoreboard} />
                   <Route path="/schedule" component={Schedule} />
                   <Route path="/standings" component={Standings} />
+                  <Route path="/search-player" component={SearchPlayer} />
                 </>
               </Switch>
             </Router>
