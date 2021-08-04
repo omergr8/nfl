@@ -1,0 +1,28 @@
+.boxFlex {
+  display: flex;
+  flex-direction: column;
+  z-index: 99999;
+  /* width: 50% !important;
+  margin-left: auto !important;
+  margin-right: auto !important; */
+}
+.redBox {
+  height: 10px;
+  width: 80px;
+  margin-top: 1px;
+  margin-left: 730px !important;
+  margin-right: auto !important;
+
+  background-color: #bb213a;
+  transform: skew(-15deg);
+}
+
+.whiteBox {
+  height: 70px !important;
+  width: 100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: skew(-15deg);
+}

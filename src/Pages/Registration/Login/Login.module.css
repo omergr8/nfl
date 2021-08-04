@@ -1,0 +1,65 @@
+.loginBack {
+  background: url("../assets/loginBack.png");
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin-top: -22px; */
+}
+.loginContainer {
+  margin-top: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 143px;
+}
+.loginForm {
+  flex-basis: 40%;
+  color: white;
+}
+.topText {
+}
+.welcomText {
+}
+.loginText {
+  color: #bdbec0;
+}
+.root {
+}
+.buttonDiv {
+}
+.emailDiv {
+  margin-bottom: 20px;
+}
+.emailField {
+  width: 100% !important;
+}
+.passwordDiv {
+}
+.passwordField {
+  width: 100% !important;
+}
+.loginButton {
+  background: #3d98d1 !important;
+  color: white !important;
+  border-radius: 0px !important;
+  height: 50px !important;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+}
+.signupButton {
+  color: #3d98d1 !important;
+}
+.forgotDiv {
+  text-align: right;
+}
+.forgotButton {
+  color: #bdbec0 !important;
+}
+.noAcoountText {
+  color: #bdbec0;
+}

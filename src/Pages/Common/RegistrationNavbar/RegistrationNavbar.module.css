@@ -1,0 +1,13 @@
+.navFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+.backButton {
+  color: white !important;
+  border-bottom: 1px solid #3d98d1 !important;
+}

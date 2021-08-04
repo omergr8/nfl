@@ -1,0 +1,47 @@
+.passingFlex {
+  display: flex;
+}
+.passingNumber {
+  color: #bdbec0;
+}
+.avatar {
+  margin-left: 25px;
+  margin-right: 10px;
+}
+.passingName {
+  color: #3d98d1;
+  text-transform: uppercase;
+}
+.passingName span {
+  color: #bdbec0 !important;
+}
+.dateContainer {
+  width: 88% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.dateHeader {
+  height: 40px;
+  width: 100%;
+  color: white;
+  transform: skew(-15deg);
+}
+.dateColor1 {
+  background: #2e9cd5;
+}
+.dateColor2 {
+  background: #012587;
+}
+.dateHeader p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 35px;
+  transform: skew(15deg);
+  text-transform: uppercase;
+}
+.caption {
+  color: #3d98d1 !important;
+  cursor: pointer;
+}

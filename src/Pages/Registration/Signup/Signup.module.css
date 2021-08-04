@@ -1,0 +1,85 @@
+.loginBack {
+  background: url("../assets/loginBack.png");
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin-top: -22px; */
+}
+.loginContainer {
+  /* margin-top: 100px; */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+  /* padding-bottom: 143px; */
+}
+.loginForm {
+  flex-basis: 40%;
+  color: white;
+}
+.topText {
+}
+.welcomText {
+}
+.loginText {
+  color: #bdbec0;
+}
+
+.emailField {
+}
+.sendConfirmText {
+  color: #bdbec0;
+  margin-top: -1px;
+}
+.formLabel {
+  color: white !important;
+}
+.root div {
+  margin-bottom: 5px;
+  width: 100% !important;
+}
+.loginButton {
+  background: #3d98d1 !important;
+  color: white !important;
+  border-radius: 0px !important;
+  height: 50px !important;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+}
+.signupButton {
+  color: #3d98d1 !important;
+}
+.tou {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  color: #bdbec0;
+}
+.blueColor {
+  color: #3d98d1 !important;
+}
+.forgotButton {
+  color: #bdbec0 !important;
+}
+.noAcoountText {
+  color: #bdbec0;
+}
+
+.selectFlex {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -20px;
+  flex-wrap: wrap;
+}
+.selectFlex div {
+  /* width: 100%; */
+}
+.container {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}

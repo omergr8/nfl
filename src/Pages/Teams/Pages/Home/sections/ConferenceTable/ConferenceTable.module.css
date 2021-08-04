@@ -1,0 +1,91 @@
+.dateContainer {
+  width: 88% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.dateHeader {
+  height: 40px;
+  width: 60%;
+  color: white;
+  transform: skew(-15deg);
+}
+.dateColor1 {
+  background: #2e9cd5;
+}
+.dateColor2 {
+  background: #012587;
+}
+.dateHeader p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 35px;
+  transform: skew(15deg);
+  text-transform: uppercase;
+}
+.tableCell {
+  /* color: #3d98d1 !important; */
+  border-bottom: none !important;
+}
+.tableCardFlex {
+  display: flex;
+  vertical-align: middle;
+}
+.box1 {
+  position: absolute;
+  margin-left: -22px;
+}
+.boxLogo {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: -42px;
+}
+.colDiv {
+  margin-left: 75px;
+  margin-top: -1px;
+}
+.ctTeamName {
+  line-height: 10px;
+}
+.cardFlexLinks {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+  font-size: 12px;
+}
+.cardFlexLinks p:nth-child(odd) {
+  color: #3d98d1 !important;
+  cursor: pointer;
+}
+.cardFlexLinks p:nth-child(even) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* box css */
+.boxFlex {
+  display: flex;
+  z-index: 99999;
+}
+.redBox {
+  height: 45px;
+  width: 10px;
+  margin-top: 1px;
+  margin-left: 1px;
+  background-color: #bb213a;
+  transform: skew(-15deg);
+}
+.blueBox {
+  height: 35px;
+  width: 10px;
+  margin-top: 1px;
+  margin-left: 1px;
+  background-color: #0376ab;
+  transform: skew(-15deg);
+}
+.whiteBox {
+  height: 50px;
+  width: 75px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: skew(-15deg);
+}

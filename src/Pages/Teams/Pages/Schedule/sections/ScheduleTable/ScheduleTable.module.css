@@ -1,0 +1,61 @@
+.dateContainer {
+  width: 88% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.tableSeason {
+  width: 100%;
+  height: 50px;
+  background: white;
+  color: black;
+}
+.tableSeason p {
+  padding: 10px;
+  font-size: 20px;
+}
+.opponentFlex {
+  display: flex;
+  align-items: center;
+}
+.opponentSign {
+  color: #bdbec0;
+}
+.opponentLogo {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.opponentName {
+  color: #3d98d1;
+}
+.resultText {
+  color: #01b501;
+  padding-right: 10px;
+}
+.resultName {
+  color: #3d98d1;
+}
+.hiName {
+  padding-right: 5px;
+}
+.grayHiText {
+  color: #bdbec0;
+}
+.blueHiText {
+  color: #3d98d1;
+}
+.hiNumber {
+  color: #bdbec0;
+}
+.ticketText {
+  color: #3d98d1;
+  padding-right: 30px;
+}
+.grayRow {
+  color: #bdbec0 !important;
+}
+.blueRow {
+  color: #3d98d1 !important;
+}
+.removeBorder {
+  border-bottom: none !important;
+}

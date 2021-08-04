@@ -1,0 +1,42 @@
+.dateContainer {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dateHeader {
+  height: 40px;
+  width: 60%;
+  background: linear-gradient(
+    122deg,
+    rgba(46, 156, 213, 1) 0%,
+    rgba(11, 60, 117, 1) 100%
+  );
+  color: white;
+  transform: skew(-15deg);
+}
+.dateHeader p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 35px;
+  transform: skew(15deg);
+}
+.nflContainer {
+  text-align: center;
+  margin-bottom: 60px;
+  /* padding-top: -50px; */
+}
+.nflContainer h2 {
+  color: white;
+  text-transform: uppercase;
+  line-height: 0px;
+}
+.statsFlex {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}

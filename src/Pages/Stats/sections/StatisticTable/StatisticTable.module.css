@@ -1,0 +1,29 @@
+.dateContainer {
+  width: 95% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.dateHeader {
+  height: 40px;
+  width: 50%;
+  background: linear-gradient(
+    122deg,
+    rgba(46, 156, 213, 1) 0%,
+    rgba(11, 60, 117, 1) 100%
+  );
+  color: white;
+  transform: skew(-15deg);
+}
+.dateHeader p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 35px;
+  transform: skew(15deg);
+  text-transform: uppercase;
+}
+.tableCell {
+  color: #3d98d1 !important;
+  border-bottom: none !important;
+}
