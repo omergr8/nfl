@@ -12,11 +12,16 @@ import ScorecardBar from "./Pages/Common/ScorecardBar/ScorecardBar";
 import Stats from "./Pages/Stats/Stats";
 import Teams from "./Pages/Teams/Pages/Home/Teams";
 import ScheduleTeam from "./Pages/Teams/Pages/Schedule/Schedule";
+import RosterTeam from "./Pages/Teams/Pages/Roster/Roster";
+import DepthChart from "./Pages/Teams/Pages/DepthChart/DepthChart";
+import TeamInjuries from "./Pages/Teams/Pages/Injuries/Injuries";
+import Injuries from "./Pages/Injuries/Injuries";
 import Footer from "./Pages/Common/Footer/Footer";
 import field from "./Assets/field.png";
 import { Switch, Route, useLocation } from "react-router-dom";
 import React from "react";
 import "./App.css";
+import Transactions from "./Pages/Transactions/Transactions";
 
 function App() {
   const location = useLocation();
@@ -54,6 +59,23 @@ function App() {
                       exact
                       path="/teams/schedule"
                       component={ScheduleTeam}
+                    />
+                    <Route exact path="/teams/roster" component={RosterTeam} />
+                    <Route
+                      exact
+                      path="/teams/depth-chart"
+                      component={DepthChart}
+                    />
+                    <Route
+                      exact
+                      path="/teams/injuries"
+                      component={TeamInjuries}
+                    />
+                    <Route exact path="/injuries" component={Injuries} />
+                    <Route
+                      exact
+                      path="/transactions"
+                      component={Transactions}
                     />
                   </>
                 </>

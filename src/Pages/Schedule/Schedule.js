@@ -8,7 +8,7 @@ const Schedule = () => {
   return (
     <div>
       <div className={classes.nflContainer}>
-        <img src={nflLogo} alt="nflLogo" width="100px" />
+        <img src={nflLogo} alt="nflLogo" />
         <h2>Schedule - 2020</h2>
       </div>
       <Filter />

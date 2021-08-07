@@ -1,0 +1,48 @@
+.dateContainer {
+  width: 88% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.heading {
+  /* border-color: red !important;
+  border-top: unset; */
+}
+.tableHead {
+  border-top: 0.2px solid #bdbec0 !important;
+  border-bottom: 0.2px solid #bdbec0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.heading h2 {
+  font-weight: 400;
+  padding-left: 15px;
+  line-height: 10px;
+}
+.headingPadding h2 {
+  padding-top: 15px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex2 {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.nameDiv {
+  color: #3d98d1;
+  margin-right: 5px;
+  text-align: left !important;
+}
+.cpDiv {
+  color: #ef2239;
+  text-align: left !important;
+}
+.tableCell {
+  color: #bdbec0 !important;
+  border-bottom: unset !important;
+  text-align: left !important;
+}

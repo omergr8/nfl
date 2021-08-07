@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
@@ -90,10 +91,15 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
     backgroundColor: "white",
   },
+  menuIndex: {
+    zIndex: "99999 !important",
+    position: "relative",
+  },
 }));
 
 export default function PrimaryNavbar() {
   const classes = useStyles();
+  const history = useHistory();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const isMenuOpen = Boolean(anchorEl);
@@ -115,7 +121,9 @@ export default function PrimaryNavbar() {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-
+  function handleRoute(rt) {
+    history.push(`/${rt}`);
+  }
   const menuId = "primary-search-account-menu";
   const renderMenu = (
     <Menu
@@ -126,9 +134,10 @@ export default function PrimaryNavbar() {
       transformOrigin={{ vertical: "top", horizontal: "right" }}
       open={isMenuOpen}
       onClose={handleMenuClose}
+      className={classes.menuIndex}
     >
-      <MenuItem onClick={handleMenuClose}>Login</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Sign Up</MenuItem>
+      <MenuItem onClick={() => handleRoute("login")}>Login</MenuItem>
+      <MenuItem onClick={() => handleRoute("signup")}>Sign Up</MenuItem>
     </Menu>
   );
 

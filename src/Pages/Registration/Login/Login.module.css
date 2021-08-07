@@ -1,6 +1,6 @@
 .loginBack {
   background: url("../assets/loginBack.png");
-  height: 100%;
+  height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -62,4 +62,7 @@
 }
 .noAcoountText {
   color: #bdbec0;
+}
+.visibiliyButtons {
+  color: #49494b !important;
 }

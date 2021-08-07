@@ -8,7 +8,7 @@ const Draft = () => {
   return (
     <div>
       <div className={classes.nflContainer}>
-        <img src={nflLogo} alt="nflLogo" width="100px" />
+        <img src={nflLogo} alt="nflLogo" />
         <h2>DRAFT</h2>
       </div>
       <Grid container spacing={3}>

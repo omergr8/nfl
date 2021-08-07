@@ -124,7 +124,7 @@ const Scoreboard = () => {
   return (
     <div>
       <div className={classes.nflContainer}>
-        <img src={nflLogo} alt="nflLogo" width="100px" />
+        <img src={nflLogo} alt="nflLogo" />
         <h2>SCOREBOARD</h2>
       </div>
       <div className={classes.container}>

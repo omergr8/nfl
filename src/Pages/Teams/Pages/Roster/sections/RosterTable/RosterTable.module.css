@@ -1,0 +1,39 @@
+.dateContainer {
+  width: 88% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.heading {
+  /* border-color: red !important;
+  border-top: unset; */
+}
+.tableHead {
+  border-top: 0.2px solid #bdbec0 !important;
+  border-bottom: 0.2px solid #bdbec0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.heading h2 {
+  font-weight: 400;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.imgDiv {
+  margin-right: 15px;
+}
+.nameDiv {
+  color: #3d98d1;
+  margin-right: 5px;
+}
+.numberDiv {
+  color: #bdbec0;
+}
+.tableCell {
+  color: #bdbec0 !important;
+  border-bottom: unset !important;
+}

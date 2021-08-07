@@ -1,5 +1,6 @@
 import classes2 from "./ConferenceTable.module.css";
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Table from "@material-ui/core/Table";
@@ -21,36 +22,42 @@ const useStyles = makeStyles((theme) => ({
     // marginBottom: theme.spacing(2),
   },
 }));
-const tableCard = (t) => (
-  <div className={classes2.tableCardFlex}>
-    <div>
-      <div className={classes2.box1}>
-        <Box type="red" />
-        <img
-          src={buffaloLogo}
-          className={classes2.boxLogo}
-          width="35px"
-          alt="boxLogo"
-        />
-      </div>
-    </div>
 
-    <div className={classes2.colDiv}>
-      <p className={classes2.ctTeamName}>Buffalo Bills</p>
-      <div className={classes2.cardFlexLinks}>
-        <p>Stats</p>
-        <p>|</p>
-        <p>Schedule</p>
-        <p>|</p>
-        <p>Roster</p>
-        <p>|</p>
-        <p>Depth Chart</p>
-      </div>
-    </div>
-  </div>
-);
 const ConferenceTable = ({ confereneceData, name }) => {
   const classes = useStyles();
+  const history = useHistory();
+
+  function routeHandler(rt) {
+    history.push(`/teams/${rt}`);
+  }
+  const tableCard = (t) => (
+    <div className={classes2.tableCardFlex}>
+      <div>
+        <div className={classes2.box1}>
+          <Box type="red" />
+          <img
+            src={buffaloLogo}
+            className={classes2.boxLogo}
+            width="35px"
+            alt="boxLogo"
+          />
+        </div>
+      </div>
+
+      <div className={classes2.colDiv}>
+        <p className={classes2.ctTeamName}>Buffalo Bills</p>
+        <div className={classes2.cardFlexLinks}>
+          <p onClick={() => routeHandler("stats")}>Stats</p>
+          <p>|</p>
+          <p onClick={() => routeHandler("schedule")}>Schedule</p>
+          <p>|</p>
+          <p onClick={() => routeHandler("roster")}>Roster</p>
+          <p>|</p>
+          <p onClick={() => routeHandler("depth-chart")}>Depth Chart</p>
+        </div>
+      </div>
+    </div>
+  );
   return (
     <div>
       <div className={classes2.dateContainer}>

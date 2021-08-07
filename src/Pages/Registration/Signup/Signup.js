@@ -1,14 +1,18 @@
 import classes from "./Signup.module.css";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import RegistrationNavbar from "../../Common/RegistrationNavbar/RegistrationNavbar";
 import {
   TextField,
   Button,
-  Select,
   FormControl,
   InputAdornment,
+  IconButton,
   MenuItem,
   Checkbox,
 } from "@material-ui/core";
+import Visibility from "@material-ui/icons/Visibility";
+import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 const CssTextField = withStyles({
   root: {
@@ -97,6 +101,19 @@ const useStyles = makeStyles((theme) => ({
 
 const Signup = () => {
   const classes2 = useStyles();
+  const [showPassword, setShowPassword] = useState(false);
+  const history = useHistory();
+
+  function onLogin() {
+    history.push("/login");
+  }
+  const handleClickShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
   return (
     <div>
       <div className={classes.loginBack}>
@@ -136,10 +153,24 @@ const Signup = () => {
                   className={classes.passwordField}
                   id="standard-password-input"
                   label="Password"
-                  required={true}
                   variant="outlined"
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   autoComplete="current-password"
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="toggle password visibility"
+                          onClick={handleClickShowPassword}
+                          onMouseDown={handleMouseDownPassword}
+                          edge="end"
+                          className={classes.visibiliyButtons}
+                        >
+                          {showPassword ? <Visibility /> : <VisibilityOff />}
+                        </IconButton>
+                      </InputAdornment>
+                    ),
+                  }}
                 />
               </div>
               <div className={classes.passwordDiv}>
@@ -147,10 +178,24 @@ const Signup = () => {
                   className={classes.passwordField}
                   id="standard-password-input"
                   label="Confirm Password"
-                  required={true}
                   variant="outlined"
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   autoComplete="current-password"
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="toggle password visibility"
+                          onClick={handleClickShowPassword}
+                          onMouseDown={handleMouseDownPassword}
+                          edge="end"
+                          className={classes.visibiliyButtons}
+                        >
+                          {showPassword ? <Visibility /> : <VisibilityOff />}
+                        </IconButton>
+                      </InputAdornment>
+                    ),
+                  }}
                 />
               </div>
               <div className={classes.aboutusDiv}>
@@ -195,7 +240,7 @@ const Signup = () => {
             <p className={classes.noAcoountText}>
               Already have an account ?
               <span>
-                <Button href="#text-buttons" className={classes.signupButton}>
+                <Button onClick={onLogin} className={classes.signupButton}>
                   Sign in
                 </Button>
               </span>

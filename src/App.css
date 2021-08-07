@@ -14,15 +14,31 @@
   background-size: 1560px;
   /* margin-top: -20px; */
 }
-.field {
+.overLay::before {
   background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  content: "";
+  display: block;
+  height: 880px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.field {
+  /* background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.5) 0%,
     rgba(0, 0, 0, 1) 35%
   );
+  min-height: 100vh;
   border: 1px solid #242424;
   overflow: hidden;
-  z-index: 2;
+  z-index: 2; */
+  position: relative;
+  z-index: 9999 !important;
 }
 .fieldImage {
   z-index: 2;

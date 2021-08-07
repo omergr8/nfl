@@ -1,0 +1,86 @@
+.injuryMain {
+  margin-top: 20px;
+}
+.dateContainer {
+  width: 88% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.date h2 {
+  font-weight: 400 !important;
+  line-height: 10px;
+  padding-left: 10px;
+}
+.datePadding h2 {
+  padding-top: 20px;
+}
+.commentCell {
+  width: 50%;
+}
+.tableCell {
+  border-bottom: unset;
+  color: #bdbec0 !important;
+}
+
+.tableHead {
+  border-top: 0.2px solid black !important;
+  border-bottom: 0.2px solid black !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.heading h2 {
+  font-weight: 400;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+.boxFlex {
+  display: flex;
+  z-index: 99999 !important;
+}
+.mainBox {
+  position: absolute;
+
+  left: -18px;
+}
+.redBox {
+  height: 30px;
+  width: 15px;
+  margin-top: 3px;
+  /* margin-left: 5px; */
+  background-color: #bb213a;
+  transform: skew(-15deg);
+}
+
+.whiteBox {
+  height: 40px;
+  width: 55px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transform: skew(-15deg);
+}
+.matchupFlex {
+  display: flex;
+
+  margin-bottom: -10px;
+}
+.box1 {
+  position: absolute;
+  margin-left: -30px;
+}
+.matchupFlex p:last-child {
+  margin-left: 5px;
+}
+.teamName {
+  margin-right: 60px;
+  margin-left: 55px;
+}
+.boxLogo {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: -38px;
+}
+.teamName {
+  margin-left: 50px !important;
+}

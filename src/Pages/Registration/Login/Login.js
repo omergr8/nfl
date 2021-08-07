@@ -1,6 +1,15 @@
 import classes from "./Login.module.css";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import RegistrationNavbar from "../../Common/RegistrationNavbar/RegistrationNavbar";
-import { TextField, Button } from "@material-ui/core";
+import {
+  TextField,
+  Button,
+  InputAdornment,
+  IconButton,
+} from "@material-ui/core";
+import Visibility from "@material-ui/icons/Visibility";
+import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import { withStyles } from "@material-ui/core/styles";
 const CssTextField = withStyles({
   root: {
@@ -74,6 +83,19 @@ const CssPasswordField = withStyles({
   },
 })(TextField);
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const history = useHistory();
+  const handleClickShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
+
+  function goSignup() {
+    history.push("/signup");
+  }
   return (
     <div>
       <div className={classes.loginBack}>
@@ -101,8 +123,23 @@ const Login = () => {
                   id="standard-password-input"
                   label="Password"
                   variant="outlined"
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   autoComplete="current-password"
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="toggle password visibility"
+                          onClick={handleClickShowPassword}
+                          onMouseDown={handleMouseDownPassword}
+                          edge="end"
+                          className={classes.visibiliyButtons}
+                        >
+                          {showPassword ? <Visibility /> : <VisibilityOff />}
+                        </IconButton>
+                      </InputAdornment>
+                    ),
+                  }}
                 />
               </div>
             </form>
@@ -119,7 +156,7 @@ const Login = () => {
             <p className={classes.noAcoountText}>
               Dont have an account yet ?{" "}
               <span>
-                <Button href="#text-buttons" className={classes.signupButton}>
+                <Button className={classes.signupButton} onClick={goSignup}>
                   Sign up
                 </Button>
               </span>

@@ -1,6 +1,6 @@
 .loginBack {
   background: url("../assets/loginBack.png");
-  height: 100%;
+  min-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -40,6 +40,11 @@
 }
 .root div {
   margin-bottom: 5px;
+}
+.passwordField,
+.emailField,
+.passwordField,
+.nameField {
   width: 100% !important;
 }
 .loginButton {
@@ -59,6 +64,7 @@
   width: 80%;
   color: #bdbec0;
 }
+
 .blueColor {
   color: #3d98d1 !important;
 }
@@ -82,4 +88,7 @@
   width: 88%;
   margin-left: auto;
   margin-right: auto;
+}
+.visibiliyButtons {
+  color: #49494b !important;
 }

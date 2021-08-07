@@ -1,0 +1,84 @@
+.cardMain {
+  margin-top: 25px;
+  width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.paper {
+  background-color: white;
+  /* height: 200px; */
+}
+.headerDiv {
+  padding-top: 1px;
+  padding-left: 20px;
+}
+.headerDiv h2 {
+  font-weight: 400;
+  line-height: 10px;
+}
+.card {
+  /* text-align: center; */
+  border: 1px solid #bdbec0;
+  height: 100%;
+  height: 130px;
+  padding-top: 20px;
+}
+.cardContainer {
+  width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.cardDetails {
+}
+.cardFlex {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  margin-right: 10px;
+}
+.cardSpan {
+}
+.firstP {
+  color: black;
+  font-size: 15px;
+}
+.firstP span {
+  color: #49494b;
+}
+.secondP {
+  color: #bdbec0;
+  font-size: 14px;
+}
+
+.secondFlex {
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+
+  margin-left: 20px;
+  margin-right: 5px;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: #ffce07;
+}
+.status {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.cardDescription {
+}
+.cardDescription p {
+  color: #49494b;
+  margin-top: 0px;
+  font-size: 14px;
+}

@@ -1,0 +1,35 @@
+.nflContainer {
+  text-align: center;
+
+  /* padding-top: -50px; */
+}
+.nflContainer h2 {
+  color: white;
+  text-transform: uppercase;
+  line-height: 10px;
+  font-size: 38px;
+  margin-right: 40px;
+}
+.filterAboveText {
+  display: flex;
+  align-items: center;
+  color: white !important;
+  justify-content: flex-end;
+  width: 87% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: -7px;
+}
+.filterAboveText p:first-child {
+  padding-right: 25px;
+}
+.filterAboveButton {
+  color: #3d98d1 !important;
+  border-color: #3d98d1 !important;
+  border-radius: 25px !important;
+  height: 35px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  font-weight: 400 !important;
+  margin-left: 20px !important;
+}

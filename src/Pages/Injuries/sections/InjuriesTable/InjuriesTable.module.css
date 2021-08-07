@@ -1,0 +1,95 @@
+.injuryMain {
+  margin-top: 20px;
+}
+.dateContainer {
+  width: 88% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.commentCell {
+  width: 50%;
+}
+.tableCell {
+  border-bottom: unset !important;
+  color: #bdbec0 !important;
+}
+.tableCell2 {
+  border-bottom: unset !important;
+  color: #3d98d1 !important;
+}
+.tableHead {
+  border-top: 0.2px solid #bdbec0 !important;
+  border-bottom: 0.2px solid #bdbec0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.heading h2 {
+  font-weight: 400;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+.tableHeading {
+  position: relative;
+}
+.statusFlex {
+  display: flex;
+  align-items: center;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+.red {
+  background-color: #ef2239;
+}
+.yellow {
+  background-color: #ffce07;
+}
+.statusText {
+  margin-left: 5px;
+}
+.boxFlex {
+  display: flex;
+  z-index: 99999;
+}
+.mainBox {
+  position: absolute;
+  top: 5px;
+  left: -18px;
+}
+.redBox {
+  height: 30px;
+  width: 15px;
+  margin-top: 3px;
+  /* margin-left: 5px; */
+  background-color: #bb213a;
+  transform: skew(-15deg);
+}
+
+.whiteBox {
+  height: 40px;
+  width: 55px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transform: skew(-15deg);
+}
+.boxImage {
+  margin-left: 15px;
+  margin-top: 3px;
+}
+.statusFlex {
+  display: flex;
+  align-items: center;
+}
+.boxAbs {
+  /* position: absolute; */
+}
+.headingText {
+  margin-left: 60px;
+}
+.headingText h2 {
+  line-height: 10px;
+  font-weight: 400;
+}

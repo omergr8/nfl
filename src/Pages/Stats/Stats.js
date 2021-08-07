@@ -15,7 +15,7 @@ const Stats = () => {
   return (
     <div>
       <div className={classes.nflContainer}>
-        <img src={nflLogo} alt="nflLogo" width="100px" />
+        <img src={nflLogo} alt="nflLogo" />
         <h2>Stat Leaders 2020</h2>
       </div>
       <div className={classes.statsFlex}>

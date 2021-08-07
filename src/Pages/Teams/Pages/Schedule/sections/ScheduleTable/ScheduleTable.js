@@ -74,7 +74,9 @@ const ScheduleTable = ({ scheduleDataRegular }) => {
                 <TableHead>
                   <TableRow>
                     {ld.header.map((hd, i) => (
-                      <TableCell key={i}>{hd}</TableCell>
+                      <TableCell key={i} className={classes2.tableHead}>
+                        {hd}
+                      </TableCell>
                     ))}
                   </TableRow>
                 </TableHead>
