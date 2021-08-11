@@ -1,0 +1,95 @@
+.visuallyHidden {
+  visibility: hidden;
+}
+.borderRight2 {
+  /* margin-left: 20px !important; */
+  /* padding-left: 75px !important; */
+
+  /* width: 60px !important; */
+}
+.paddingHead {
+  padding-left: 46px !important;
+}
+.ydsWidth {
+  width: 100px !important;
+}
+.tableHead {
+  border-top: 0.2px solid #bdbec0 !important;
+  border-bottom: 0.2px solid #bdbec0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.tableHeading h2 {
+  line-height: 15px;
+  padding-left: 15px;
+  font-weight: 400;
+  /* font-size: 22px; */
+}
+.tableHeading2 h2 {
+  padding-top: 55px;
+  font-weight: 400;
+}
+.nameDivFlex {
+  display: flex;
+  align-items: center;
+}
+.nameDivText {
+  color: #3d98d1;
+}
+.nameDivSpan {
+  margin-left: 5px;
+  color: #bdbec0;
+}
+.cellColor,
+.borderRight {
+  color: #bdbec0 !important;
+  border-bottom: unset;
+}
+/* TeamLeader css */
+.teamMain {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  overflow: auto;
+}
+.teamCell {
+  border: 1px solid black;
+  min-height: 110px;
+  width: 300px;
+}
+.teamCellContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cellText {
+}
+.cellText p {
+  line-height: 10px;
+}
+.cellFlex {
+  margin-top: -7px;
+  display: flex;
+  align-items: center;
+}
+.cellAvatar {
+}
+.cellFlexText {
+  margin-left: 15px;
+}
+.cellFlexText p {
+  line-height: 10px;
+  font-size: 15px;
+  color: #49494b;
+}
+.cellFlexText h2 {
+  line-height: 10px;
+  font-weight: 400;
+  font-size: 22px;
+}
+@media only screen and (max-width: 1200px) {
+  .teamMain {
+    flex-wrap: wrap;
+  }
+}

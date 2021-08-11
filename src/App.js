@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import Login from "./Pages/Registration/Login/Login";
 import Signup from "./Pages/Registration/Signup/Signup";
 import Home from "./Pages/Home/Home";
+import Home2 from "./Pages/Home2/Home2";
 import Draft from "./Pages/Draft/Draft";
 import Scoreboard from "./Pages/Scoreboard/Scoreboard";
 import Standings from "./Pages/Standings/Standings";
@@ -15,6 +16,7 @@ import ScheduleTeam from "./Pages/Teams/Pages/Schedule/Schedule";
 import RosterTeam from "./Pages/Teams/Pages/Roster/Roster";
 import DepthChart from "./Pages/Teams/Pages/DepthChart/DepthChart";
 import TeamInjuries from "./Pages/Teams/Pages/Injuries/Injuries";
+import TeamStat from "./Pages/Teams/Pages/Stats/Stats";
 import Injuries from "./Pages/Injuries/Injuries";
 import Footer from "./Pages/Common/Footer/Footer";
 import field from "./Assets/field.png";
@@ -36,7 +38,9 @@ function App() {
           <Route exact path="/signup" component={Signup} />
         </Switch>
       ) : (
-        <div className="overLay">
+        <div
+          className={location.pathname === "/home2" ? "overLay2" : "overLay"}
+        >
           <div className="field">
             <div className="App">
               <Switch>
@@ -47,6 +51,7 @@ function App() {
                   </div>
                   <Route exact path="/login" component={Login} />
                   <Route exact path="/home" component={Home} />
+                  <Route exact path="/home2" component={Home2} />
                   <Route exact path="/draft" component={Draft} />
                   <>
                     <Route path="/scoreboard" component={Scoreboard} />
@@ -71,6 +76,7 @@ function App() {
                       path="/teams/injuries"
                       component={TeamInjuries}
                     />
+                    <Route exact path="/teams/stats" component={TeamStat} />
                     <Route exact path="/injuries" component={Injuries} />
                     <Route
                       exact

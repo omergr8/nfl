@@ -1,0 +1,27 @@
+.main {
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.hbHeading {
+  color: white;
+  margin-bottom: 3px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.iconFlex {
+  display: flex;
+}
+.paraWhite {
+  height: 7.16px;
+  width: 14.32px;
+  background: white;
+  transform: skew(-25deg);
+}
+.paraBlue {
+  height: 7.16px;
+  width: 14.32px;
+  background: #3d98d1;
+  transform: skew(-25deg);
+  margin-left: 5px;
+  margin-right: 5px;
+}

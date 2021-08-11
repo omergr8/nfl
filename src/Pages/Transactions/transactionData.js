@@ -22,11 +22,128 @@ export const transactionData = [
         logo: "logo",
         text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
       },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
     ],
   },
   {
     date: "Friday, October 9",
     data: [
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+    ],
+  },
+  {
+    date: "Thursday, October 8",
+    data: [
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
+      {
+        logo: "logo",
+        text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",
+      },
       {
         logo: "logo",
         text: "Designated RB Christian McCaffrey from injured reserve. Released CB Eli Apple.",

@@ -17,6 +17,11 @@ export const confereneceData = [
         name: "Buffalo Bills",
         logo: "logo",
       },
+      {
+        id: 4,
+        name: "Buffalo Bills",
+        logo: "logo",
+      },
     ],
   },
   {
@@ -36,6 +41,61 @@ export const confereneceData = [
         id: 3,
         name: "Buffalo Bills",
         logo: "logo2",
+      },
+      {
+        id: 4,
+        name: "Buffalo Bills",
+        logo: "logo",
+      },
+    ],
+  },
+  {
+    header: "AFC SOUTH",
+    data: [
+      {
+        id: 1,
+        name: "Baltimore Ravens",
+        logo: "logo2",
+      },
+      {
+        id: 2,
+        name: "Buffalo Bills",
+        logo: "logo2",
+      },
+      {
+        id: 3,
+        name: "Buffalo Bills",
+        logo: "logo2",
+      },
+      {
+        id: 4,
+        name: "Buffalo Bills",
+        logo: "logo",
+      },
+    ],
+  },
+  {
+    header: "AFC WEST",
+    data: [
+      {
+        id: 1,
+        name: "Baltimore Ravens",
+        logo: "logo2",
+      },
+      {
+        id: 2,
+        name: "Buffalo Bills",
+        logo: "logo2",
+      },
+      {
+        id: 3,
+        name: "Buffalo Bills",
+        logo: "logo2",
+      },
+      {
+        id: 4,
+        name: "Buffalo Bills",
+        logo: "logo",
       },
     ],
   },

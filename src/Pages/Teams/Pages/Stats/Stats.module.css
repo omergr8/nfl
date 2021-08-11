@@ -1,0 +1,15 @@
+.nflContainer {
+  text-align: center;
+
+  /* padding-top: -50px; */
+}
+.statsFlex {
+  display: flex;
+  justify-content: space-between;
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -24px;
+}
+.statsTabs {
+}

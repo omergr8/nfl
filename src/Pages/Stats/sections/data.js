@@ -29,6 +29,20 @@ export const leadersData = [
         span: "atl",
         yds: 2462,
       },
+      {
+        id: 4,
+        avatar: avatar,
+        name: "Matt Ryan",
+        span: "atl",
+        yds: 2462,
+      },
+      {
+        id: 5,
+        avatar: avatar,
+        name: "Matt Ryan",
+        span: "atl",
+        yds: 2462,
+      },
     ],
   },
   {
@@ -54,6 +68,64 @@ export const leadersData = [
       },
       {
         id: 3,
+        avatar: avatar,
+        name: "Matt Ryan",
+        span: "atl",
+        yds: 2462,
+      },
+      {
+        id: 4,
+        avatar: avatar,
+        name: "Matt Ryan",
+        span: "atl",
+        yds: 2462,
+      },
+      {
+        id: 5,
+        avatar: avatar,
+        name: "Matt Ryan",
+        span: "atl",
+        yds: 2462,
+      },
+    ],
+  },
+  {
+    id: 2,
+    header: [
+      {
+        id: 1,
+        name: "RECEIVING",
+      },
+      {
+        id: 2,
+        name: "YDS",
+      },
+    ],
+    data: [
+      { id: 1, avatar: avatar, name: "Matt Ryan", span: "atl", yds: 2462 },
+      {
+        id: 2,
+        avatar: avatar,
+        name: "Matt Ryan",
+        span: "atl",
+        yds: 2462,
+      },
+      {
+        id: 3,
+        avatar: avatar,
+        name: "Matt Ryan",
+        span: "atl",
+        yds: 2462,
+      },
+      {
+        id: 4,
+        avatar: avatar,
+        name: "Matt Ryan",
+        span: "atl",
+        yds: 2462,
+      },
+      {
+        id: 5,
         avatar: avatar,
         name: "Matt Ryan",
         span: "atl",

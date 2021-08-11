@@ -1,0 +1,96 @@
+.mainContainer {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+/* LeftCard css */
+.leftCardImage {
+}
+.leftCardText {
+  color: white;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leftCardText p:first-child {
+  font-size: 13px;
+}
+.leftCardText h2 {
+  margin-top: -5px;
+}
+.leftDescription {
+  color: #bdbec0;
+}
+.exploreButtonDiv {
+  margin-left: -8px;
+}
+.exploreButton {
+  color: #3d98d1 !important;
+}
+/* RightCard css */
+.rightBack {
+  background: linear-gradient(
+      180deg,
+      rgba(26, 46, 104, 0) 25%,
+      rgba(17, 30, 69, 0.68) 60%,
+      rgba(13, 23, 52, 1) 100%
+    ),
+    url("../../assets/topRight.png");
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+}
+.rightBack2 {
+  background: linear-gradient(
+      180deg,
+      rgba(26, 46, 104, 0.8010154403558299) 0%,
+      rgba(24, 123, 156, 0.8010154403558299) 100%
+    ),
+    url("../../assets/topRight.png");
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 20px;
+}
+.rightContainer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leftAbsoulute {
+  padding-top: 50px;
+  /* padding-bottom: 10px; */
+  /* width: 55%; */
+}
+.rightDate {
+}
+.rightDesc {
+  margin-top: -5px;
+}
+.rightWeek {
+  /* margin-top: -10px;
+  margin-bottom: 15px; */
+  margin-top: -10px;
+}
+.leftAbsoulute h2 {
+  width: 75%;
+  line-height: 20px;
+}
+
+.leftAbsoulute p {
+  width: 70%;
+  line-height: 20px;
+  margin-bottom: -5px;
+}
+.rightExploreButtonDiv {
+  text-align: right;
+  padding-bottom: 10px;
+}
+.rightExploreButton {
+  color: white !important;
+  text-transform: unset !important;
+  font-weight: 400 !important;
+}

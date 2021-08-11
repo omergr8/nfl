@@ -36,9 +36,13 @@ const StatisticTable = ({ statsData, name }) => {
           <Table className={classes.table} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell>OFFENCE</TableCell>
-                <TableCell align="center">DEFENCE</TableCell>
-                <TableCell align="center">SPECIAL TEAMS</TableCell>
+                <TableCell className={classes2.tableHead}>OFFENCE</TableCell>
+                <TableCell className={classes2.tableHead} align="center">
+                  DEFENCE
+                </TableCell>
+                <TableCell className={classes2.tableHead} align="center">
+                  SPECIAL TEAMS
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

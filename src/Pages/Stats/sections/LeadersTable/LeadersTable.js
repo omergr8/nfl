@@ -67,7 +67,11 @@ const LeadersTable = ({ leadersData, name }) => {
               <TableHead>
                 <TableRow>
                   {ld.header.map((hd, i) => (
-                    <TableCell key={i} align={i > 0 ? "right" : "inherit"}>
+                    <TableCell
+                      className={classes2.tableHead}
+                      key={i}
+                      align={i > 0 ? "right" : "inherit"}
+                    >
                       {hd.name}
                     </TableCell>
                   ))}
@@ -83,10 +87,16 @@ const LeadersTable = ({ leadersData, name }) => {
                         : { background: "white" }
                     }
                   >
-                    <TableCell component="th" scope="row">
+                    <TableCell
+                      component="th"
+                      scope="row"
+                      className={classes2.tableCell}
+                    >
                       {passing(row.id, row.avatar, row.name, row.span)}
                     </TableCell>
-                    <TableCell align="right">{row.yds}</TableCell>
+                    <TableCell align="right" className={classes2.tableCell}>
+                      {row.yds}
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>

@@ -1,11 +1,4 @@
 .App {
-  /* margin-right: auto; 
-  margin-left: auto; 
-  max-width: 1200px;
-  padding-right: 10px; 
-  padding-left: 10px; 
-  margin-top: 120px; */
-  /* margin-top: 20px; */
   padding-bottom: 50px;
 }
 .overLay {
@@ -23,6 +16,26 @@
   content: "";
   display: block;
   height: 880px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.overLay2 {
+  background: url("./Assets/homeBack.svg") no-repeat;
+  background-color: #1a1a1a !important;
+  background-size: 1520px;
+  /* margin-top: -20px; */
+}
+.overLay2::before {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 70%,
+    rgba(26, 26, 26, 1) 100%
+  );
+  content: "";
+  display: block;
+  height: 1170px;
   position: absolute;
   width: 100%;
   z-index: 1;

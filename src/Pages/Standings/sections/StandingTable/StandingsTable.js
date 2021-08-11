@@ -9,27 +9,8 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
-import Box from "./Components/Box";
-import boxLogo from "../../../../Assets/boxLogo.svg";
 import Paper from "@material-ui/core/Paper";
 import classes2 from "./StandingsTable.module.css";
-function createData(
-  afc,
-  w,
-  l,
-  t,
-  pct,
-  home,
-  away,
-  div,
-  conf,
-  pf,
-  pa,
-  diff,
-  strk
-) {
-  return { afc, w, l, t, pct, home, away, div, conf, pf, pa, diff, strk };
-}
 
 function descendingComparator(a, b, orderBy) {
   console.log(a, b, orderBy);

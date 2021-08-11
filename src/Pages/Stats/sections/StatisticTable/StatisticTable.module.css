@@ -27,3 +27,9 @@
   color: #3d98d1 !important;
   border-bottom: none !important;
 }
+.tableHead {
+  border-top: 0.2px solid #bdbec0 !important;
+  border-bottom: 0.2px solid #bdbec0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}

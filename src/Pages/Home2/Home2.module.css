@@ -1,0 +1,12 @@
+.dotsOverlay {
+  color: white;
+  position: absolute;
+  top: 180px;
+  left: 45px;
+}
+.dotsOverlay2 {
+  color: white;
+  position: absolute;
+  top: 180px;
+  right: 0;
+}
