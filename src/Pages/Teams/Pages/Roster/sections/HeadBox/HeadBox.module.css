@@ -2,17 +2,19 @@
   display: flex;
   flex-direction: column;
   z-index: 99999;
+  position: relative;
   /* width: 50% !important;
   margin-left: auto !important;
   margin-right: auto !important; */
 }
 .redBox {
+  position: absolute;
   height: 10px;
   width: 180px;
-  margin-top: 1px;
-  margin-left: 690px !important;
-  margin-right: auto !important;
-
+  left: 45.5%;
+  bottom: 100%;
+  transform: translateX(50%);
+  text-align: center;
   background-color: #bb213a;
   transform: skew(-15deg);
 }

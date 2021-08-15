@@ -4,7 +4,7 @@
 .overLay {
   background: url("./Assets/stadium.png") no-repeat;
   background-color: black !important;
-  background-size: 1560px;
+  background-size: 100%;
   /* margin-top: -20px; */
 }
 .overLay::before {
@@ -15,7 +15,7 @@
   );
   content: "";
   display: block;
-  height: 880px;
+  height: 120%;
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -23,7 +23,7 @@
 .overLay2 {
   background: url("./Assets/homeBack.svg") no-repeat;
   background-color: #1a1a1a !important;
-  background-size: 1520px;
+  background-size: 100%;
   /* margin-top: -20px; */
 }
 .overLay2::before {
@@ -43,7 +43,7 @@
 .overLay3 {
   background: url("./Assets/articlesBack.svg") no-repeat;
   background-color: #1a1a1a !important;
-  background-size: 1520px;
+  background-size: 100%;
   /* margin-top: -20px; */
 }
 .overLay3::before {
@@ -55,7 +55,7 @@
   );
   content: "";
   display: block;
-  height: 590px;
+  height: 100%;
   position: absolute;
   width: 100%;
   z-index: 1;

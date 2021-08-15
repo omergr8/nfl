@@ -15,9 +15,11 @@ const Podcast = () => {
             </Grid>
             <Grid item xs={4} style={{ position: "relative" }}>
               <div className={classes.rightImage}>
-                <img src={podRight} alt="podRight" width="100%" />
-                <div className={classes.podeRightPlayIcon}>
-                  <img src={playIcon} alt="playIcon" width="100%" />
+                <div className={classes.rightImageContainer}>
+                  <img src={podRight} alt="podRight" width="100%" />
+                  <div className={classes.podeRightPlayIcon}>
+                    <img src={playIcon} alt="playIcon" width="100%" />
+                  </div>
                 </div>
               </div>
             </Grid>

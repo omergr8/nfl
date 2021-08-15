@@ -9,7 +9,7 @@ const Aboutus = () => {
       <HeadBox heading="about us" />
       <div className={classes.flex}>
         <div className={classes.imageContainer}>
-          <img src={aboutUs} alt="aboutUs" width="890px" />
+          <img src={aboutUs} alt="aboutUs" width="95%" />
           <div className={classes.imageOverlay} />
         </div>
         <div className={classes.boxAbsolute}>

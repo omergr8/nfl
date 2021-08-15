@@ -14,12 +14,18 @@
 }
 .rightImage {
   position: absolute;
-  bottom: -66px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* bottom: -66px; */
+}
+.rightImageContainer {
+  position: relative;
 }
 .podeRightPlayIcon {
   position: absolute;
-  top: 120px;
-  left: 170px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* VideoGallery css */

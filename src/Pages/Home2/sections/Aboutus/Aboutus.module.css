@@ -1,5 +1,5 @@
 .main {
-  width: 90%;
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -19,9 +19,9 @@
     rgba(26, 46, 104, 1) 100%
   );
   height: 100%;
-  width: 100%;
+  width: 95%;
   top: 50%;
-  left: 50%;
+  left: 47.5%;
   transform: translate(-50%, -50%);
 }
 .boxAbsolute {
@@ -31,7 +31,7 @@
 }
 .boxContainer {
   /* height: 400px; */
-  width: 600px;
+  width: 650px;
   background-color: white !important;
   padding-bottom: 15px;
 }
