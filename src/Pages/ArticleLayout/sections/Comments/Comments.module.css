@@ -1,0 +1,75 @@
+.commentTop {
+  color: white;
+}
+
+/* CommentForm css */
+.formMain {
+}
+.textArea {
+  width: 100%;
+  min-height: 222px;
+  resize: none;
+}
+.textArea::placeholder {
+  color: #505050;
+  font-size: 27px;
+  padding: 20px;
+}
+.nameField {
+  min-height: 42px;
+  min-width: 322px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.emailField {
+  min-height: 42px;
+  min-width: 322px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.nameField::placeholder {
+  color: #565656;
+  padding-left: 10px;
+}
+.emailField::placeholder {
+  color: #565656;
+  padding-left: 10px;
+}
+.checkBoxDiv {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.checkBox1 {
+  margin-left: -10px;
+}
+.checkBox2 {
+  color: #707070 !important;
+}
+.addButton {
+  color: white !important;
+  background-color: #3d98d1 !important;
+  text-transform: uppercase !important;
+  text-align: center;
+  min-width: 160px;
+  min-height: 42px;
+  border-color: transparent !important;
+}
+/* DisplayComments css */
+.dcMain {
+  margin-top: 40px;
+}
+.dcFlex {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 80px;
+}
+.dcAvatar {
+}
+.dcComment {
+  margin-left: 10px;
+}
+.dcCommentDesc {
+  margin-top: -15px;
+}

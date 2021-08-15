@@ -1,0 +1,9 @@
+.viewAllButtonDiv {
+  text-align: end;
+  margin-right: 30px;
+  margin-top: 0px;
+}
+.viewAllButton {
+  color: #1592e6 !important;
+  font-weight: 400 !important;
+}

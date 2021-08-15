@@ -1,0 +1,321 @@
+/* ThubmnailCard css */
+.tcMain {
+  position: relative;
+  z-index: 999;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.thumbBox {
+  border: 1px solid black;
+  background-color: #303030;
+
+  /* width: 355px; */
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.thumbBox2 {
+  border: 1px solid black;
+  background-color: #303030;
+  /* width: 355px; */
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+  /* margin-top: 45px; */
+}
+.thumbBox:hover,
+.thumbBox2:hover {
+  background-color: #3d98d1;
+}
+.thumbBox:hover .imageThumbOverlay,
+.thumbBox2:hover .imageThumbOverlay {
+  display: block;
+}
+.imageThumb {
+  position: relative;
+  margin-top: -10px;
+}
+.imageThumbPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imageThumbOverlay {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 46, 104, 0.7) 0%,
+    rgba(0, 124, 180, 0.7) 100%
+  );
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: none;
+}
+.boxText p:first-child {
+  line-height: 5px;
+  font-size: 9px;
+}
+.boxText p:last-child {
+  line-height: 15px;
+  font-size: 10px;
+}
+.boxText h2 {
+  line-height: 8px;
+  font-size: 14px;
+}
+.boxText {
+  width: 58% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.viewAllButtonDiv {
+  text-align: end;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.viewAllButton {
+  color: white !important;
+  font-weight: 400 !important;
+}
+
+/* HorizontalCard css */
+.hcMain {
+  position: relative;
+  z-index: 9999 !important;
+}
+.leftTextContainer {
+  color: white;
+  width: 80%;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+.leftText1 {
+  font-size: 14px;
+}
+.leftText2 {
+  margin-top: -5px;
+  font-size: 18px;
+}
+/* HorizontalOverlayCard css */
+.hocMain {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hocImageContainer {
+  position: relative;
+  color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.hocTextAbsoulute {
+  position: absolute;
+  top: 45px;
+}
+.hocTextContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.rightDate {
+}
+.rightDesc {
+  margin-top: -5px;
+}
+.rightWeek {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.rightHead {
+  margin-top: 5px;
+}
+.hocTextContainer h2 {
+  width: 75%;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.hocTextContainer p {
+  width: 75%;
+  line-height: 20px;
+  margin-bottom: -5px;
+  font-size: 14px;
+}
+.rightExploreButtonDiv {
+  text-align: right;
+  padding-bottom: 10px;
+}
+.rightExploreButton {
+  color: white !important;
+  text-transform: unset !important;
+  font-weight: 400 !important;
+}
+.hocOverlay {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 46, 104, 0) 25%,
+    rgba(17, 30, 69, 0.68) 50%,
+    rgba(13, 23, 52, 1) 100%
+  );
+  height: 100%;
+  width: 100%;
+  top: 49%;
+  left: 50%;
+  padding-left: 1px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+/* NewsCard css */
+
+.articleBackground {
+  background: url("../../assets/newsBack.png");
+  /* border-radius: 20px; */
+  background-size: contain;
+  background-repeat: no-repeat !important;
+  color: white;
+  position: relative;
+  padding-top: 1px;
+  margin-top: 20px;
+}
+.articleContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articleOverlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 85%;
+  width: 98%;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 17px;
+  padding-top: 15px;
+  padding-left: 11.8px;
+}
+.articleTextContainer {
+  position: relative;
+  padding-bottom: 10px;
+}
+.articleHeading {
+  margin-bottom: -15px;
+}
+.articleText2 {
+  margin-top: -15px;
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: -15px;
+}
+.iconContainer div {
+  padding-right: 10px;
+}
+.viewAllButtonDiv {
+  text-align: end;
+}
+.viewAllButton {
+  color: white !important;
+  font-weight: 400 !important;
+}
+/* VerticleOverlayCard css */
+.vocMain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  z-index: 9999 !important;
+}
+.vocImageContainer {
+  position: relative;
+  /* width: 250px; */
+  margin-right: 20px;
+}
+.vocTextAbsoulte {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.vocTextContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 14px;
+}
+.vocTextContainer p {
+  margin-top: -10px;
+}
+.vocText1 {
+}
+.vocIconDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.vocIconDiv div {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.vocOverlay {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 46, 104, 0) 55%,
+    rgba(17, 30, 69, 0.78) 80%,
+    rgba(13, 23, 52, 1) 100%
+  );
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  padding-left: 1px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+/* Headbox css */
+.main {
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.hbHeading {
+  color: white;
+  margin-bottom: 3px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.iconFlex {
+  display: flex;
+}
+.paraWhite {
+  height: 7.16px;
+  width: 14.32px;
+  background: white;
+  transform: skew(-25deg);
+}
+.paraBlue {
+  height: 7.16px;
+  width: 14.32px;
+  background: #3d98d1;
+  transform: skew(-25deg);
+  margin-left: 5px;
+  margin-right: 5px;
+}

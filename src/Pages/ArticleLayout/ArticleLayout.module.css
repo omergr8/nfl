@@ -1,0 +1,21 @@
+.main {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rightSectionMain {
+  margin-top: 370px;
+}
+.articleMain {
+  position: relative;
+}
+.articleMainAbsolute {
+  position: absolute;
+  top: 350px;
+  left: 0;
+}
+.videoMainAbsolute {
+  position: absolute;
+  top: 0;
+  right: -100px;
+}

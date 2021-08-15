@@ -40,6 +40,26 @@
   width: 100%;
   z-index: 1;
 }
+.overLay3 {
+  background: url("./Assets/articlesBack.svg") no-repeat;
+  background-color: #1a1a1a !important;
+  background-size: 1520px;
+  /* margin-top: -20px; */
+}
+.overLay3::before {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 70%,
+    rgba(26, 26, 26, 1) 100%
+  );
+  content: "";
+  display: block;
+  height: 590px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
 .field {
   /* background: linear-gradient(
     180deg,

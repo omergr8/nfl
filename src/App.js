@@ -18,6 +18,8 @@ import DepthChart from "./Pages/Teams/Pages/DepthChart/DepthChart";
 import TeamInjuries from "./Pages/Teams/Pages/Injuries/Injuries";
 import TeamStat from "./Pages/Teams/Pages/Stats/Stats";
 import Injuries from "./Pages/Injuries/Injuries";
+import Articles from "./Pages/Articles/Articles";
+import ArticleLayout from "./Pages/ArticleLayout/ArticleLayout";
 import Footer from "./Pages/Common/Footer/Footer";
 import field from "./Assets/field.png";
 import { Switch, Route, useLocation } from "react-router-dom";
@@ -39,7 +41,14 @@ function App() {
         </Switch>
       ) : (
         <div
-          className={location.pathname === "/home2" ? "overLay2" : "overLay"}
+          className={
+            location.pathname === "/home2"
+              ? "overLay2"
+              : location.pathname === "/article-layout" ||
+                location.pathname === "/articles"
+              ? "overLay3"
+              : "overLay"
+          }
         >
           <div className="field">
             <div className="App">
@@ -82,6 +91,12 @@ function App() {
                       exact
                       path="/transactions"
                       component={Transactions}
+                    />
+                    <Route exact path="/articles" component={Articles} />
+                    <Route
+                      exact
+                      path="/article-layout"
+                      component={ArticleLayout}
                     />
                   </>
                 </>
