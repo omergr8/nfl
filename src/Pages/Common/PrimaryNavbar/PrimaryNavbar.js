@@ -1,5 +1,6 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
+
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
@@ -44,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   title: {
-    marginBottom: "15px",
+    marginBottom: "25px",
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
@@ -216,7 +217,10 @@ export default function PrimaryNavbar() {
   const list = (
     <div className={classes.list}>
       <div className={classes.mobileLogo}>
-        <img src={logo} alt="logo" />
+        <Link to="/home2">
+          {" "}
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <Grid container justify="center" alignItems="center" spacing={0}>
         <Grid item xs={1}></Grid>
@@ -275,7 +279,10 @@ export default function PrimaryNavbar() {
       <AppBar className={classes.appBar} position="static">
         <Toolbar className={classes.bar}>
           <Typography className={classes.title} variant="h6" noWrap>
-            <img width="70px" src={logo} alt="logo" />
+            <Link to="/home2">
+              {" "}
+              <img src={logo} width="70%" alt="logo" />
+            </Link>
           </Typography>
 
           <div className={classes.sectionDesktop}>
