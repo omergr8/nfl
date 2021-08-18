@@ -4,6 +4,10 @@
   list-style-type: none;
   /* margin-bottom: 35px; */
 }
+.sideBarMain {
+  position: relative;
+  z-index: 999999;
+}
 .menu li a {
   display: block;
   padding: 15px 20px;

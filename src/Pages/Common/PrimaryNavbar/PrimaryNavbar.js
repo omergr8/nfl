@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   sectionMobile: {
-    display: "flex",
+    zIndex: "99999 !important",
     marginBottom: "20px",
     [theme.breakpoints.up("md")]: {
       display: "none",
@@ -72,6 +72,8 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   paper: {
+    position: "relative",
+    zIndex: "99999 !important",
     backgroundColor: "black",
     color: "white",
   },
@@ -93,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
   },
   menuIndex: {
-    zIndex: "99999 !important",
+    zIndex: "999 !important",
     position: "relative",
   },
 }));
@@ -195,13 +197,13 @@ export default function PrimaryNavbar() {
         <a href="#">NCAAF</a>
       </li>
       <li>
-        <a href="#">STATS</a>
+        <Link to="/stats">STATS</Link>
       </li>
       <li>
         <a href="#">FANTASY</a>
       </li>
       <li>
-        <a href="#">ARTICLES</a>
+        <Link to="/articles">ARTICLES</Link>
       </li>
       <li>
         <a href="#">NEWS</a>
@@ -243,13 +245,17 @@ export default function PrimaryNavbar() {
           <ListItemText primary="NCAAF" />
         </ListItem>
         <ListItem button>
-          <ListItemText primary="STATS" />
+          <Link to="/stats">
+            <ListItemText primary="STATS" />
+          </Link>
         </ListItem>
         <ListItem button>
           <ListItemText primary="FANTASY" />
         </ListItem>
         <ListItem button>
-          <ListItemText primary="ARTICLES" />
+          <Link to="/articles">
+            <ListItemText primary="ARTICLES" />
+          </Link>
         </ListItem>
         <ListItem button>
           <ListItemText primary="NEWS" />
@@ -262,13 +268,15 @@ export default function PrimaryNavbar() {
   );
   const renderMobileMenu = (
     <React.Fragment>
-      <Drawer
-        classes={{ paper: classes.paper }}
-        open={isMobileMenuOpen}
-        onClose={handleMobileMenuClose}
-      >
-        {list}
-      </Drawer>
+      <div className={classes2.sideBarMain}>
+        <Drawer
+          classes={{ paper: classes.paper }}
+          open={isMobileMenuOpen}
+          onClose={handleMobileMenuClose}
+        >
+          {list}
+        </Drawer>
+      </div>
     </React.Fragment>
   );
 
