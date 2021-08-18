@@ -72,8 +72,6 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   paper: {
-    position: "relative",
-    zIndex: "99999 !important",
     backgroundColor: "black",
     color: "white",
   },
@@ -122,6 +120,7 @@ export default function PrimaryNavbar() {
   };
 
   const handleMobileMenuOpen = (event) => {
+    console.log(event.currentTarget);
     setMobileMoreAnchorEl(event.currentTarget);
   };
   function handleRoute(rt) {
@@ -245,7 +244,7 @@ export default function PrimaryNavbar() {
           <ListItemText primary="NCAAF" />
         </ListItem>
         <ListItem button>
-          <Link to="/stats">
+          <Link className={classes2.navLink} to="/stats">
             <ListItemText primary="STATS" />
           </Link>
         </ListItem>
@@ -253,7 +252,7 @@ export default function PrimaryNavbar() {
           <ListItemText primary="FANTASY" />
         </ListItem>
         <ListItem button>
-          <Link to="/articles">
+          <Link className={classes2.navLink} to="/articles">
             <ListItemText primary="ARTICLES" />
           </Link>
         </ListItem>
@@ -267,17 +266,15 @@ export default function PrimaryNavbar() {
     </div>
   );
   const renderMobileMenu = (
-    <React.Fragment>
-      <div className={classes2.sideBarMain}>
-        <Drawer
-          classes={{ paper: classes.paper }}
-          open={isMobileMenuOpen}
-          onClose={handleMobileMenuClose}
-        >
-          {list}
-        </Drawer>
-      </div>
-    </React.Fragment>
+    <div className={classes2.sideBarMain}>
+      <Drawer
+        classes={{ paper: classes.paper, root: classes2.sideBarMain }}
+        open={isMobileMenuOpen}
+        onClose={handleMobileMenuClose}
+      >
+        {list}
+      </Drawer>
+    </div>
   );
 
   return (
