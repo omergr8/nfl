@@ -61,17 +61,8 @@
   z-index: 1;
 }
 .field {
-  /* background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 1) 35%
-  );
-  min-height: 100vh;
-  border: 1px solid #242424;
-  overflow: hidden;
-  z-index: 2; */
   position: relative;
-  z-index: 9999 !important;
+  z-index: 999 !important;
 }
 .fieldImage {
   z-index: 2;

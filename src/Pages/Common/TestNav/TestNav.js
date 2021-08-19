@@ -4,7 +4,7 @@ import { NavLink, useLocation } from "react-router-dom";
 const navLinks1 = [
   {
     name: "Home",
-    route: "/home",
+    route: "/",
   },
   {
     name: "Player Profile",
@@ -42,7 +42,7 @@ const navLinks1 = [
 const navLinks2 = [
   {
     name: "Home",
-    route: "/home",
+    route: "/",
   },
   {
     name: "Stats",

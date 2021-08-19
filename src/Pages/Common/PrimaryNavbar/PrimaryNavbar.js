@@ -196,7 +196,7 @@ export default function PrimaryNavbar() {
         <a href="#">NCAAF</a>
       </li>
       <li>
-        <Link to="/stats">STATS</Link>
+        <Link to="/stats-leader">STATS</Link>
       </li>
       <li>
         <a href="#">FANTASY</a>
@@ -218,7 +218,7 @@ export default function PrimaryNavbar() {
   const list = (
     <div className={classes.list}>
       <div className={classes.mobileLogo}>
-        <Link to="/home2">
+        <Link to="/">
           {" "}
           <img src={logo} alt="logo" />
         </Link>
@@ -244,7 +244,7 @@ export default function PrimaryNavbar() {
           <ListItemText primary="NCAAF" />
         </ListItem>
         <ListItem button>
-          <Link className={classes2.navLink} to="/stats">
+          <Link className={classes2.navLink} to="/stats-leader">
             <ListItemText primary="STATS" />
           </Link>
         </ListItem>
@@ -284,7 +284,7 @@ export default function PrimaryNavbar() {
       <AppBar className={classes.appBar} position="static">
         <Toolbar className={classes.bar}>
           <Typography className={classes.title} variant="h6" noWrap>
-            <Link to="/home2">
+            <Link to="/">
               {" "}
               <img src={logo} width="70%" alt="logo" />
             </Link>

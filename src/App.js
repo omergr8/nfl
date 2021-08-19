@@ -42,7 +42,7 @@ function App() {
       ) : (
         <div
           className={
-            location.pathname === "/home2"
+            location.pathname === "/"
               ? "overLay2"
               : location.pathname === "/article-layout" ||
                 location.pathname === "/articles"
@@ -59,15 +59,15 @@ function App() {
                     <ScorecardBar />
                   </div>
                   <Route exact path="/login" component={Login} />
-                  <Route exact path="/home" component={Home} />
-                  <Route exact path="/home2" component={Home2} />
+                  <Route exact path="/" component={Home2} />
                   <Route exact path="/draft" component={Draft} />
                   <>
                     <Route path="/scoreboard" component={Scoreboard} />
                     <Route path="/schedule" component={Schedule} />
                     <Route path="/standings" component={Standings} />
-                    <Route path="/search-player" component={SearchPlayer} />
-                    <Route path="/stats" component={Stats} />
+                    <Route path="/playerprofile" component={SearchPlayer} />
+                    <Route path="/stats" component={Home} />
+                    <Route path="/stats-leader" component={Stats} />
                     <Route exact path="/teams" component={Teams} />
                     <Route
                       exact
