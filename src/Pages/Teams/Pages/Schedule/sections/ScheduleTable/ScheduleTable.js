@@ -2,6 +2,7 @@ import classes2 from "./ScheduleTable.module.css";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
+import Box from "@material-ui/core/Box";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -18,6 +19,14 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     // marginBottom: theme.spacing(2),
+  },
+  longTextStyle: {
+    wordWrap: "break-word",
+    minWidth: 30,
+  },
+  longTextStyle2: {
+    wordWrap: "break-word",
+    minWidth: 33,
   },
 }));
 const opponent = (sign, logo, name) => (
@@ -73,8 +82,11 @@ const ScheduleTable = ({ scheduleDataRegular }) => {
               <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                   <TableRow>
-                    {ld.header.map((hd, i) => (
-                      <TableCell key={i} className={classes2.tableHead}>
+                    {ld.header.map((hd, i2) => (
+                      <TableCell
+                        key={i}
+                        className={clsx(classes2.tableHead, classes2.width3)}
+                      >
                         {hd}
                       </TableCell>
                     ))}
@@ -100,7 +112,10 @@ const ScheduleTable = ({ scheduleDataRegular }) => {
                             )}
                           >
                             {/* {passing(row.id, row.avatar, row.name, row.span)} */}
-                            {row.wk}
+
+                            <Box className={classes.longTextStyle}>
+                              {row.wk}
+                            </Box>
                           </TableCell>
                           <TableCell
                             className={clsx(
@@ -108,7 +123,9 @@ const ScheduleTable = ({ scheduleDataRegular }) => {
                               classes2.removeBorder
                             )}
                           >
-                            {row.date}
+                            <Box className={classes.longTextStyle}>
+                              {row.date}
+                            </Box>
                           </TableCell>
                           <TableCell className={clsx(classes2.removeBorder)}>
                             {opponent(
@@ -118,19 +135,29 @@ const ScheduleTable = ({ scheduleDataRegular }) => {
                             )}
                           </TableCell>
                           <TableCell className={clsx(classes2.removeBorder)}>
-                            {result(row.result1, row.result2)}
+                            <Box className={classes.longTextStyle}>
+                              {result(row.result1, row.result2)}
+                            </Box>
                           </TableCell>
                           <TableCell className={clsx(classes2.removeBorder)}>
-                            {row.wl}
+                            <Box className={classes.longTextStyle}>
+                              {row.wl}
+                            </Box>
                           </TableCell>
                           <TableCell className={clsx(classes2.removeBorder)}>
-                            {hi(row.hipass1, row.hipass2)}
+                            <Box className={classes.longTextStyle}>
+                              {hi(row.hipass1, row.hipass2)}
+                            </Box>
                           </TableCell>
                           <TableCell className={clsx(classes2.removeBorder)}>
-                            {hi(row.hirush1, row.hirush2)}
+                            <Box className={classes.longTextStyle}>
+                              {hi(row.hirush1, row.hirush2)}
+                            </Box>
                           </TableCell>
                           <TableCell className={clsx(classes2.removeBorder)}>
-                            {hi(row.hirec1, row.hirec2)}
+                            <Box className={classes.longTextStyle}>
+                              {hi(row.hirec1, row.hirec2)}
+                            </Box>
                           </TableCell>
                         </TableRow>
                       ))
@@ -148,41 +175,84 @@ const ScheduleTable = ({ scheduleDataRegular }) => {
                             scope="row"
                             className={clsx(
                               classes2.grayRow,
-                              classes2.removeBorder
+                              classes2.removeBorder,
+                              classes2.width
                             )}
                           >
                             {/* {passing(row.id, row.avatar, row.name, row.span)} */}
-                            {row.wk}
+
+                            <Box className={classes.longTextStyle2}>
+                              {row.wk}
+                            </Box>
                           </TableCell>
                           <TableCell
                             className={clsx(
                               classes2.grayRow,
-                              classes2.removeBorder
+                              classes2.removeBorder,
+                              classes2.width
                             )}
                           >
-                            {row.date}
+                            <Box className={classes.longTextStyle2}>
+                              {row.date}
+                            </Box>
                           </TableCell>
-                          <TableCell className={clsx(classes2.removeBorder)}>
-                            {opponent(
-                              row.opponentSign,
-                              row.opponentLogo,
-                              row.opponentName
+                          <TableCell
+                            className={clsx(
+                              classes2.removeBorder,
+                              classes2.width
                             )}
+                          >
+                            <Box className={classes.longTextStyle2}>
+                              {opponent(
+                                row.opponentSign,
+                                row.opponentLogo,
+                                row.opponentName
+                              )}
+                            </Box>
                           </TableCell>
                           <TableCell
                             className={clsx(
                               classes2.blueRow,
-                              classes2.removeBorder
+                              classes2.removeBorder,
+                              classes2.width
                             )}
                           >
-                            {row.time}
+                            <Box className={classes.longTextStyle2}>
+                              {row.time}
+                            </Box>
                           </TableCell>
-                          <TableCell className={clsx(classes2.removeBorder)}>
-                            {row.tv}
+                          <TableCell
+                            className={clsx(
+                              classes2.removeBorder,
+                              classes2.width
+                            )}
+                          >
+                            <Box className={classes.longTextStyle2}>
+                              {row.tv}
+                            </Box>
                           </TableCell>
-                          <TableCell className={clsx(classes2.removeBorder)}>
-                            {tickets(row.tickets)}
+                          <TableCell
+                            className={clsx(
+                              classes2.removeBorder,
+                              classes2.width
+                            )}
+                          >
+                            <Box className={classes.longTextStyle2}>
+                              {tickets(row.tickets)}
+                            </Box>
                           </TableCell>
+                          <TableCell
+                            className={clsx(
+                              classes2.removeBorder,
+                              classes2.width
+                            )}
+                          ></TableCell>
+                          <TableCell
+                            className={clsx(
+                              classes2.removeBorder,
+                              classes2.width
+                            )}
+                          ></TableCell>
                         </TableRow>
                       ))}
                 </TableBody>

@@ -64,7 +64,7 @@ function EnhancedTableHead(props) {
           {teamName}
         </TableCell>
         <TableCell align="right">W</TableCell>
-        <TableCell align="right">L&nbsp;(g)</TableCell>
+        <TableCell align="right">L</TableCell>
         <TableCell align="right">T</TableCell>
         {headCells.map((headCell) => (
           <TableCell

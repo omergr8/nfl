@@ -65,3 +65,14 @@
 .removeBorder {
   border-bottom: none !important;
 }
+/* .width {
+
+}
+.width2 {
+  min-width: 4vw !important;
+} */
+.width3 {
+  /* max-width: 100px !important; */
+  /* background-color: red;
+  border: 1px solid white; */
+}

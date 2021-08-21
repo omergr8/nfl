@@ -52,7 +52,7 @@ export const scheduleDataRegular = [
   {
     type: "secondary",
     season: null,
-    header: ["WK", "DATE", "OPPONENT", "TIME", "TV", "TICKETS"],
+    header: ["WK", "DATE", "OPPONENT", "TIME", "TV", "TICKETS", "", ""],
     data: [
       {
         id: 1,
